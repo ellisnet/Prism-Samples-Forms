@@ -286,20 +286,6 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Prism.Autofac.Forms/6.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Autofac": "3.5.2",
-          "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.3.193"
-        },
-        "compile": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
-        }
-      },
       "Prism.Core/6.3.0": {
         "type": "package",
         "compile": {
@@ -1940,8 +1926,14 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "UsingPageDialogService/1.0.0": {
+      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
+      },
+      "UsingPageDialogService/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Prism.Autofac.Forms": "1.0.0"
+        }
       }
     },
     "UAP,Version=v10.0/win10-arm": {
@@ -2176,20 +2168,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "Prism.Autofac.Forms/6.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Autofac": "3.5.2",
-          "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.3.193"
-        },
-        "compile": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
         }
       },
       "Prism.Core/6.3.0": {
@@ -3749,8 +3727,14 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "UsingPageDialogService/1.0.0": {
+      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
+      },
+      "UsingPageDialogService/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Prism.Autofac.Forms": "1.0.0"
+        }
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
@@ -3983,20 +3967,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "Prism.Autofac.Forms/6.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Autofac": "3.5.2",
-          "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.3.193"
-        },
-        "compile": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
         }
       },
       "Prism.Core/6.3.0": {
@@ -5515,8 +5485,14 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "UsingPageDialogService/1.0.0": {
+      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
+      },
+      "UsingPageDialogService/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Prism.Autofac.Forms": "1.0.0"
+        }
       }
     },
     "UAP,Version=v10.0/win10-x64": {
@@ -5757,20 +5733,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "Prism.Autofac.Forms/6.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Autofac": "3.5.2",
-          "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.3.193"
-        },
-        "compile": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
         }
       },
       "Prism.Core/6.3.0": {
@@ -7333,8 +7295,14 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "UsingPageDialogService/1.0.0": {
+      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
+      },
+      "UsingPageDialogService/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Prism.Autofac.Forms": "1.0.0"
+        }
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
@@ -7567,20 +7535,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "Prism.Autofac.Forms/6.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Autofac": "3.5.2",
-          "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.3.193"
-        },
-        "compile": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
         }
       },
       "Prism.Core/6.3.0": {
@@ -9099,8 +9053,14 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "UsingPageDialogService/1.0.0": {
+      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
+      },
+      "UsingPageDialogService/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Prism.Autofac.Forms": "1.0.0"
+        }
       }
     },
     "UAP,Version=v10.0/win10-x86": {
@@ -9341,20 +9301,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "Prism.Autofac.Forms/6.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Autofac": "3.5.2",
-          "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.3.193"
-        },
-        "compile": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
         }
       },
       "Prism.Core/6.3.0": {
@@ -10917,8 +10863,14 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "UsingPageDialogService/1.0.0": {
+      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
+      },
+      "UsingPageDialogService/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Prism.Autofac.Forms": "1.0.0"
+        }
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
@@ -11151,20 +11103,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "Prism.Autofac.Forms/6.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Autofac": "3.5.2",
-          "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.3.193"
-        },
-        "compile": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
         }
       },
       "Prism.Core/6.3.0": {
@@ -12683,8 +12621,14 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "UsingPageDialogService/1.0.0": {
+      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
+      },
+      "UsingPageDialogService/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Prism.Autofac.Forms": "1.0.0"
+        }
       }
     }
   },
@@ -13298,31 +13242,6 @@
         "ref/net46/Microsoft.Win32.Primitives.dll",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._"
-      ]
-    },
-    "Prism.Autofac.Forms/6.3.0": {
-      "sha512": "y3ACmNggoogRH2UpatX4BnIc0UU0T88WbumKluvQ9rc06AFaRvBYRLHWzFGj230nZxOQu3ULSiVlJCvahqjehw==",
-      "type": "package",
-      "path": "prism.autofac.forms/6.3.0",
-      "files": [
-        "lib/MonoAndroid1.0/Prism.Autofac.Forms.XML",
-        "lib/MonoAndroid1.0/Prism.Autofac.Forms.dll",
-        "lib/MonoTouch1.0/Prism.Autofac.Forms.XML",
-        "lib/MonoTouch1.0/Prism.Autofac.Forms.dll",
-        "lib/UAP10.0/Prism.Autofac.Forms.XML",
-        "lib/UAP10.0/Prism.Autofac.Forms.dll",
-        "lib/Windows8.1/Prism.Autofac.Forms.XML",
-        "lib/Windows8.1/Prism.Autofac.Forms.dll",
-        "lib/WindowsPhone8.0/Prism.Autofac.Forms.XML",
-        "lib/WindowsPhone8.0/Prism.Autofac.Forms.dll",
-        "lib/WindowsPhoneApp8.1/Prism.Autofac.Forms.XML",
-        "lib/WindowsPhoneApp8.1/Prism.Autofac.Forms.dll",
-        "lib/Xamarin.iOS1.0/Prism.Autofac.Forms.XML",
-        "lib/Xamarin.iOS1.0/Prism.Autofac.Forms.dll",
-        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Prism.Autofac.Forms.XML",
-        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Prism.Autofac.Forms.dll",
-        "prism.autofac.forms.6.3.0.nupkg.sha512",
-        "prism.autofac.forms.nuspec"
       ]
     },
     "Prism.Core/6.3.0": {
@@ -16315,6 +16234,11 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Prism.Autofac.Forms/1.0.0": {
+      "type": "project",
+      "path": "../../../../Prism/Source/Xamarin/Prism.Autofac.Forms/Prism.Autofac.Forms.csproj",
+      "msbuildProject": "../../../../Prism/Source/Xamarin/Prism.Autofac.Forms/Prism.Autofac.Forms.csproj"
+    },
     "UsingPageDialogService/1.0.0": {
       "type": "project",
       "path": "../UsingPageDialogService/UsingPageDialogService.csproj",
@@ -16323,8 +16247,8 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "Autofac >= 3.5.2",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
-      "Prism.Autofac.Forms >= 6.3.0",
       "Prism.Core >= 6.3.0",
       "Prism.Forms >= 6.3.0",
       "Xamarin.Forms >= 2.3.3.193"
@@ -16346,14 +16270,17 @@
           "projectReferences": {
             "C:\\GitHome\\Prism-Samples-Forms\\UsingPageDialogService.Autofac\\UsingPageDialogService\\UsingPageDialogService\\UsingPageDialogService.csproj": {
               "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\UsingPageDialogService.Autofac\\UsingPageDialogService\\UsingPageDialogService\\UsingPageDialogService.csproj"
+            },
+            "C:\\GitHome\\Prism\\Source\\Xamarin\\Prism.Autofac.Forms\\Prism.Autofac.Forms.csproj": {
+              "projectPath": "C:\\GitHome\\Prism\\Source\\Xamarin\\Prism.Autofac.Forms\\Prism.Autofac.Forms.csproj"
             }
           }
         }
       }
     },
     "dependencies": {
+      "Autofac": "3.5.2",
       "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-      "Prism.Autofac.Forms": "6.3.0",
       "Prism.Core": "6.3.0",
       "Prism.Forms": "6.3.0",
       "Xamarin.Forms": "2.3.3.193"
