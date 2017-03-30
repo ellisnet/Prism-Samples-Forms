@@ -5,6 +5,7 @@ using ContosoCookbook.Services;
 using Autofac;
 using Prism.Autofac;
 using Prism.Autofac.Forms;
+using Prism.Autofac.Immutable;
 
 namespace ContosoCookbook
 {
@@ -26,11 +27,12 @@ namespace ContosoCookbook
             Container.RegisterTypeForNavigation<MainPage>();
             Container.RegisterTypeForNavigation<RecipePage>();
 
-            var builder = new ContainerBuilder();
+            //var builder = new ContainerBuilder();
 
-            builder.RegisterType<RecipeService>().As<IRecipeService>().SingleInstance();
+            //builder.RegisterType<RecipeService>().As<IRecipeService>().SingleInstance();
 
-            builder.Update(Container);
+            //builder.Update(Container);
+            (Container as AutofacContainer)?.RegisterType<RecipeService>().As<IRecipeService>().SingleInstance();
         }
     }
 }

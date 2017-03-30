@@ -178,9 +178,6 @@
     <Reference Include="Prism, Version=6.3.0.0, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Prism.Core.6.3.0\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Prism.dll</HintPath>
     </Reference>
-    <Reference Include="Prism.Autofac.Forms, Version=6.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Prism.Autofac.Forms.6.3.0\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Prism.Autofac.Forms.dll</HintPath>
-    </Reference>
     <Reference Include="Prism.Forms, Version=6.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Prism.Forms.6.3.0\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Prism.Forms.dll</HintPath>
     </Reference>
@@ -209,6 +206,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Prism\Source\Xamarin\Prism.Autofac.Forms\Prism.Autofac.Forms.csproj">
+      <Project>{943664cf-3a0c-4eff-8bda-29241d49dd85}</Project>
+      <Name>Prism.Autofac.Forms</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

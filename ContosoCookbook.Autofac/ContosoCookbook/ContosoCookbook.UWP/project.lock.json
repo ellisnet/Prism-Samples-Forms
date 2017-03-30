@@ -295,20 +295,6 @@
           "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
-      "Prism.Autofac.Forms/6.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Autofac": "3.5.2",
-          "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.3.193"
-        },
-        "compile": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
-        }
-      },
       "Prism.Core/6.3.0": {
         "type": "package",
         "compile": {
@@ -1950,6 +1936,12 @@
         }
       },
       "ContosoCookbook/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Prism.Autofac.Forms": "1.0.0"
+        }
+      },
+      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
       }
     },
@@ -2194,20 +2186,6 @@
         },
         "runtime": {
           "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Prism.Autofac.Forms/6.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Autofac": "3.5.2",
-          "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.3.193"
-        },
-        "compile": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
         }
       },
       "Prism.Core/6.3.0": {
@@ -3768,6 +3746,12 @@
         }
       },
       "ContosoCookbook/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Prism.Autofac.Forms": "1.0.0"
+        }
+      },
+      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
       }
     },
@@ -4010,20 +3994,6 @@
         },
         "runtime": {
           "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Prism.Autofac.Forms/6.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Autofac": "3.5.2",
-          "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.3.193"
-        },
-        "compile": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
         }
       },
       "Prism.Core/6.3.0": {
@@ -5543,6 +5513,12 @@
         }
       },
       "ContosoCookbook/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Prism.Autofac.Forms": "1.0.0"
+        }
+      },
+      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
       }
     },
@@ -5793,20 +5769,6 @@
         },
         "runtime": {
           "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Prism.Autofac.Forms/6.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Autofac": "3.5.2",
-          "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.3.193"
-        },
-        "compile": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
         }
       },
       "Prism.Core/6.3.0": {
@@ -7370,6 +7332,12 @@
         }
       },
       "ContosoCookbook/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Prism.Autofac.Forms": "1.0.0"
+        }
+      },
+      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
       }
     },
@@ -7612,20 +7580,6 @@
         },
         "runtime": {
           "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Prism.Autofac.Forms/6.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Autofac": "3.5.2",
-          "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.3.193"
-        },
-        "compile": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
         }
       },
       "Prism.Core/6.3.0": {
@@ -9145,6 +9099,12 @@
         }
       },
       "ContosoCookbook/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Prism.Autofac.Forms": "1.0.0"
+        }
+      },
+      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
       }
     },
@@ -9395,20 +9355,6 @@
         },
         "runtime": {
           "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Prism.Autofac.Forms/6.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Autofac": "3.5.2",
-          "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.3.193"
-        },
-        "compile": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
         }
       },
       "Prism.Core/6.3.0": {
@@ -10972,6 +10918,12 @@
         }
       },
       "ContosoCookbook/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Prism.Autofac.Forms": "1.0.0"
+        }
+      },
+      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
       }
     },
@@ -11214,20 +11166,6 @@
         },
         "runtime": {
           "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Prism.Autofac.Forms/6.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Autofac": "3.5.2",
-          "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.3.193"
-        },
-        "compile": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10.0/Prism.Autofac.Forms.dll": {}
         }
       },
       "Prism.Core/6.3.0": {
@@ -12747,6 +12685,12 @@
         }
       },
       "ContosoCookbook/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Prism.Autofac.Forms": "1.0.0"
+        }
+      },
+      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
       }
     }
@@ -13385,31 +13329,6 @@
         "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
         "tools/install.ps1"
-      ]
-    },
-    "Prism.Autofac.Forms/6.3.0": {
-      "sha512": "y3ACmNggoogRH2UpatX4BnIc0UU0T88WbumKluvQ9rc06AFaRvBYRLHWzFGj230nZxOQu3ULSiVlJCvahqjehw==",
-      "type": "package",
-      "path": "prism.autofac.forms/6.3.0",
-      "files": [
-        "lib/MonoAndroid1.0/Prism.Autofac.Forms.XML",
-        "lib/MonoAndroid1.0/Prism.Autofac.Forms.dll",
-        "lib/MonoTouch1.0/Prism.Autofac.Forms.XML",
-        "lib/MonoTouch1.0/Prism.Autofac.Forms.dll",
-        "lib/UAP10.0/Prism.Autofac.Forms.XML",
-        "lib/UAP10.0/Prism.Autofac.Forms.dll",
-        "lib/Windows8.1/Prism.Autofac.Forms.XML",
-        "lib/Windows8.1/Prism.Autofac.Forms.dll",
-        "lib/WindowsPhone8.0/Prism.Autofac.Forms.XML",
-        "lib/WindowsPhone8.0/Prism.Autofac.Forms.dll",
-        "lib/WindowsPhoneApp8.1/Prism.Autofac.Forms.XML",
-        "lib/WindowsPhoneApp8.1/Prism.Autofac.Forms.dll",
-        "lib/Xamarin.iOS1.0/Prism.Autofac.Forms.XML",
-        "lib/Xamarin.iOS1.0/Prism.Autofac.Forms.dll",
-        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Prism.Autofac.Forms.XML",
-        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Prism.Autofac.Forms.dll",
-        "prism.autofac.forms.6.3.0.nupkg.sha512",
-        "prism.autofac.forms.nuspec"
       ]
     },
     "Prism.Core/6.3.0": {
@@ -16406,13 +16325,19 @@
       "type": "project",
       "path": "../ContosoCookbook/ContosoCookbook.csproj",
       "msbuildProject": "../ContosoCookbook/ContosoCookbook.csproj"
+    },
+    "Prism.Autofac.Forms/1.0.0": {
+      "type": "project",
+      "path": "../../../../Prism/Source/Xamarin/Prism.Autofac.Forms/Prism.Autofac.Forms.csproj",
+      "msbuildProject": "../../../../Prism/Source/Xamarin/Prism.Autofac.Forms/Prism.Autofac.Forms.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "": [
+      "Autofac >= 3.5.2",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
       "Newtonsoft.Json >= 9.0.1",
-      "Prism.Autofac.Forms >= 6.3.0",
+      "Prism.Forms >= 6.3.0",
       "Xamarin.Forms >= 2.3.3.193"
     ],
     "UAP,Version=v10.0": []
@@ -16430,6 +16355,9 @@
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
+            "C:\\GitHome\\Prism\\Source\\Xamarin\\Prism.Autofac.Forms\\Prism.Autofac.Forms.csproj": {
+              "projectPath": "C:\\GitHome\\Prism\\Source\\Xamarin\\Prism.Autofac.Forms\\Prism.Autofac.Forms.csproj"
+            },
             "C:\\GitHome\\Prism-Samples-Forms\\ContosoCookbook.Autofac\\ContosoCookbook\\ContosoCookbook\\ContosoCookbook.csproj": {
               "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\ContosoCookbook.Autofac\\ContosoCookbook\\ContosoCookbook\\ContosoCookbook.csproj"
             }
@@ -16438,9 +16366,10 @@
       }
     },
     "dependencies": {
+      "Autofac": "3.5.2",
       "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
       "Newtonsoft.Json": "9.0.1",
-      "Prism.Autofac.Forms": "6.3.0",
+      "Prism.Forms": "6.3.0",
       "Xamarin.Forms": "2.3.3.193"
     },
     "frameworks": {
