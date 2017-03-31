@@ -13,7 +13,6 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Autofac;
-using Prism.Autofac;
 using Prism.Autofac.Forms;
 
 namespace UsingPageDialogService.UWP
@@ -24,7 +23,7 @@ namespace UsingPageDialogService.UWP
         {
             this.InitializeComponent();
 
-            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
+            Prism.Autofac.PrismApplication.ContainerType = Prism.Autofac.AutofacContainerType.Immutable;
             LoadApplication(new UsingPageDialogService.App(new UwpInitializer()));
         }
     }
@@ -36,5 +35,4 @@ namespace UsingPageDialogService.UWP
 
         }
     }
-
 }
