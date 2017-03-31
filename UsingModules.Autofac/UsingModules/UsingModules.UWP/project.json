@@ -1,7 +1,7 @@
 ﻿{
   "dependencies": {
+    "Autofac": "3.5.2",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
-    "Prism.Autofac.Forms": "6.3.0",
     "Prism.Core": "6.3.0",
     "Prism.Forms": "6.3.0",
     "Xamarin.Forms": "2.3.3.193"
