@@ -23,7 +23,7 @@ namespace UsingPageDialogService.UWP
         {
             this.InitializeComponent();
 
-            Prism.Autofac.PrismApplication.ContainerType = Prism.Autofac.AutofacContainerType.Immutable;
+            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
             LoadApplication(new UsingPageDialogService.App(new UwpInitializer()));
         }
     }

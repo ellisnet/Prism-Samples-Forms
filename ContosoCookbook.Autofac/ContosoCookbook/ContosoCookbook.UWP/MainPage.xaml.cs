@@ -23,7 +23,7 @@ namespace ContosoCookbook.UWP
         {
             this.InitializeComponent();
 
-            Prism.Autofac.PrismApplication.ContainerType = Prism.Autofac.AutofacContainerType.Immutable;
+            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
             LoadApplication(new ContosoCookbook.App(new UwpInitializer()));
         }
     }

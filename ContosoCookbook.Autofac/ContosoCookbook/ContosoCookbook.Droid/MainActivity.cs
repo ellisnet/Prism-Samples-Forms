@@ -23,7 +23,7 @@ namespace ContosoCookbook.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
-            Prism.Autofac.PrismApplication.ContainerType = Prism.Autofac.AutofacContainerType.Immutable;
+            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
             LoadApplication(new App(new AndroidInitializer()));
         }
     }
