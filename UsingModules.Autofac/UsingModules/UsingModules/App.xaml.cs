@@ -27,19 +27,19 @@ namespace UsingModules
             Container.RegisterTypeForNavigation<MainPage>();
 
             //Register any types needed for module instantiation
-            var builder = new ContainerBuilder();
+            //var builder = new ContainerBuilder();
 
-            //It seems like registering IContainer should be handled by the Prism.Autofac.Forms library itself.
-            builder.Register(c => this.Container).As<IContainer>();
+            ////It seems like registering IContainer should be handled by the Prism.Autofac.Forms library itself.
+            //builder.Register(c => this.Container).As<IContainer>();
 
-            builder.Update(Container);
+            //builder.Update(Container);
         }
 
         protected override void ConfigureModuleCatalog()
         {
             Type sampleModuleType = typeof(SampleModule.SampleModule);
             ModuleCatalog.AddModule(
-              new ModuleInfo()
+              new ModuleInfo
               {
                   ModuleName = sampleModuleType.Name,
                   ModuleType = sampleModuleType,

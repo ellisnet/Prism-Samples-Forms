@@ -42,7 +42,6 @@ namespace UsingModules.ViewModels
 
         private void NavigateToSamplePage()
         {
-            //TODO: The following navigation currently failing on UWP (and Android/iOS?)
             _navigationService.NavigateAsync("SamplePage?par=test");
         }
 

@@ -10,6 +10,7 @@ namespace UsingModules.UWP
         {
             this.InitializeComponent();
 
+            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
             LoadApplication(new UsingModules.App(new UwpInitializer()));
         }
     }
