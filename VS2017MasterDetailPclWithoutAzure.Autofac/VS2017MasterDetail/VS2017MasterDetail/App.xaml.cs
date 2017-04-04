@@ -4,8 +4,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 //PRISM-CONVERSION-NOTE: Additional usings required for Prism -
-using Prism.Unity;
-using Microsoft.Practices.Unity;
+using Prism.Autofac;
+using Prism.Autofac.Forms;
 using VS2017MasterDetail.Models;
 using VS2017MasterDetail.Services;
 using VS2017MasterDetail.ViewModels;
@@ -48,7 +48,7 @@ namespace VS2017MasterDetail
             Container.RegisterTypeForNavigation<ItemsPage, ItemsViewModel>();
             Container.RegisterTypeForNavigation<NewItemPage, NewItemViewModel>();
 
-            Container.RegisterType<IDataStore<Item>, MockDataStore>();
+            (Container as IAutofacContainer)?.RegisterType<MockDataStore>().As<IDataStore<Item>>();
         }
 
         public static void SetMainPage()
