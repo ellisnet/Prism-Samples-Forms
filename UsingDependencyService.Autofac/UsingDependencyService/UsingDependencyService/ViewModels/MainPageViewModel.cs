@@ -17,17 +17,11 @@ namespace UsingDependencyService.ViewModels
 
         public DelegateCommand SpeakCommand { get; set; }
 
-        //TODO: This constructor fails with Prism.Autofac.Forms - I don't think it is capable of 
-        //  resolving dependencies via the Xamarin.Forms DependencyService
         public MainPageViewModel(ITextToSpeech textToSpeech)
         {
             _textToSpeech = textToSpeech;
             SpeakCommand = new DelegateCommand(Speak);
         }
-
-        //Adding this constructor appears to fix the problem.
-        public MainPageViewModel() : this(Xamarin.Forms.DependencyService.Get<ITextToSpeech>())
-        { }
 
         private void Speak()
         {

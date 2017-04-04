@@ -25,6 +25,8 @@ namespace UsingCompositeCommands.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
             LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options);

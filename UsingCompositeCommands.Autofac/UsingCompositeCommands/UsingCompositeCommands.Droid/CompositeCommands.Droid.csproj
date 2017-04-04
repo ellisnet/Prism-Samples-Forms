@@ -59,9 +59,6 @@
     <Reference Include="Prism, Version=6.3.0.0, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Prism.Core.6.3.0\lib\MonoAndroid10\Prism.dll</HintPath>
     </Reference>
-    <Reference Include="Prism.Autofac.Forms, Version=6.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Prism.Autofac.Forms.6.3.0\lib\MonoAndroid1.0\Prism.Autofac.Forms.dll</HintPath>
-    </Reference>
     <Reference Include="Prism.Forms, Version=6.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Prism.Forms.6.3.0\lib\MonoAndroid1.0\Prism.Forms.dll</HintPath>
     </Reference>
@@ -141,6 +138,10 @@
     <Content Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Prism\Source\Xamarin\Prism.Autofac.Forms\Prism.Autofac.Forms.csproj">
+      <Project>{943664cf-3a0c-4eff-8bda-29241d49dd85}</Project>
+      <Name>Prism.Autofac.Forms</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UsingCompositeCommands\CompositeCommands.csproj">
       <Name>CompositeCommands</Name>
       <Project>{1A10BFD2-241E-479C-BFFD-1B0950C7E960}</Project>

@@ -23,6 +23,7 @@ namespace UsingCompositeCommands.UWP
         {
             this.InitializeComponent();
 
+            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
             LoadApplication(new UsingCompositeCommands.App(new UwpInitializer()));
         }
     }

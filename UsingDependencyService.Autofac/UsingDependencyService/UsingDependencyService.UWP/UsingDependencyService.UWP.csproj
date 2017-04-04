@@ -129,10 +129,17 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Prism\Source\Xamarin\Prism.Autofac.Forms\Prism.Autofac.Forms.csproj">
+      <Project>{943664cf-3a0c-4eff-8bda-29241d49dd85}</Project>
+      <Name>Prism.Autofac.Forms</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UsingDependencyService\UsingDependencyService.csproj">
       <Project>{684a648b-46d8-494b-8f01-7ed1ae3e8e74}</Project>
       <Name>UsingDependencyService</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

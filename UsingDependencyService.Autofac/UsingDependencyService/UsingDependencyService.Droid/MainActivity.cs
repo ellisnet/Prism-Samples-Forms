@@ -8,6 +8,8 @@ using Android.Widget;
 using Android.OS;
 using Autofac;
 using Prism.Autofac.Forms;
+using UsingDependencyService.Droid.Services;
+using UsingDependencyService.Services;
 
 namespace UsingDependencyService.Droid
 {
@@ -19,6 +21,8 @@ namespace UsingDependencyService.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
             LoadApplication(new App(new AndroidInitializer()));
         }
     }
@@ -27,7 +31,11 @@ namespace UsingDependencyService.Droid
     {
         public void RegisterTypes(IContainer container)
         {
-
+            //One option would be to register the ITextToSpeech implementation here - this does not
+            // use or require the Xamarin.Forms DependencyService.
+            // But since the platform-specific implementation of ITextToSpeech *is* registered with
+            // the DependencyService, the Autofac registration is being done in the portable library.
+            //(container as IAutofacContainer)?.RegisterType<TextToSpeech_Android>().As<ITextToSpeech>();
         }
     }
 }

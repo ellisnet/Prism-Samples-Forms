@@ -8,6 +8,7 @@ Samples that demonstrate how to use various Prism features with Xamarin.Forms.
 | [UsingPageDialogService][3] |How to use the IPageDialogService to display alerts and action sheets from within your ViewModels.
 | [UsingModules][4] |How to use Prism modularization to separate the application logic using IModule, IModuleManager, ModuleCatalog.
 | [ContosoCookbook][5] |Contoso Cookbook is a classic Microsoft sample recipe app; first adapted for Xamarin.Forms by Jeff Prosise in 2015 and now updated to use Prism for Xamarin.Forms. Demonstrates how to use a TabbedPage with a DataTemplate for the tabs, and a ListView with DataTemplate for the recipe list on each tab; for a clean professional-looking UI.
+| [TabbedNavigation][6] |How to handle TabbedPages. This shows the use of IActiveAware on all Tabbed Children to handle the Switching Tabs, as well as initialization with INavigatingAware, and a strategy for Dynamic Loading of Children in the TabbedPage.
 
 
 [1]: UsingCompositeCommands/
@@ -15,3 +16,4 @@ Samples that demonstrate how to use various Prism features with Xamarin.Forms.
 [3]: UsingPageDialogService/
 [4]: UsingModules/
 [5]: ContosoCookbook/
+[6]: TabbedNavigation/

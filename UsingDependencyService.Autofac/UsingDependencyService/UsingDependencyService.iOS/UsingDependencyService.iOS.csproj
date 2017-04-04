@@ -103,7 +103,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Prism\Source\Xamarin\Prism.Autofac.Forms\Prism.Autofac.Forms.csproj">
+      <Project>{943664cf-3a0c-4eff-8bda-29241d49dd85}</Project>
+      <Name>Prism.Autofac.Forms</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UsingDependencyService\UsingDependencyService.csproj">
+      <Project>{684a648b-46d8-494b-8f01-7ed1ae3e8e74}</Project>
       <Name>UsingDependencyService</Name>
     </ProjectReference>
   </ItemGroup>
@@ -131,9 +136,6 @@
     </Reference>
     <Reference Include="Prism, Version=6.3.0.0, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Prism.Core.6.3.0\lib\Xamarin.iOS10\Prism.dll</HintPath>
-    </Reference>
-    <Reference Include="Prism.Autofac.Forms, Version=6.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Prism.Autofac.Forms.6.3.0\lib\Xamarin.iOS1.0\Prism.Autofac.Forms.dll</HintPath>
     </Reference>
     <Reference Include="Prism.Forms, Version=6.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Prism.Forms.6.3.0\lib\Xamarin.iOS1.0\Prism.Forms.dll</HintPath>

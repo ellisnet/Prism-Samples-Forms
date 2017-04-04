@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VS2017MasterDetail.Views.ItemsPage"
+              Title="{Binding Title}"
+             x:Name="BrowseItemsPage"
+             xmlns:vm="clr-namespace:VS2017MasterDetail.ViewModels;"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             BindingContext="{Binding Source={x:Static vm:DesignTimeViewModelLocator.ItemsPage}}">
+    <!--PRISM-CONVERSION-NOTE: The bottom four attributes of our ContentPage tag above were set for Prism; 
+        the bottom one, setting the BindingContext, only affects design-time - giving us IntelliSense via 
+        Visual Studio - and will not do anything at compile-time or run-time.-->
+  <ContentPage.ToolbarItems>
+    <!--PRISM-CONVERSION-NOTE: replaced Clicked="AddItem_Clicked" in the line below with:
+        Command="{Binding AddItemCommand}"-->
+    <ToolbarItem Text="Add Item" Command="{Binding AddItemCommand}" />
+  </ContentPage.ToolbarItems>
+  <ContentPage.Content>
+    <StackLayout>
+      <!--PRISM-CONVERSION-NOTE: replaced ItemSelected="OnItemSelected" in the tag below with:
+        SelectedItem="{Binding SelectedItem, Mode=TwoWay}"-->
+      <ListView x:Name="ItemsListView"
+				ItemsSource="{Binding Items}"
+                VerticalOptions="FillAndExpand"
+                HasUnevenRows="true"
+                RefreshCommand="{Binding LoadItemsCommand}"
+                IsPullToRefreshEnabled="true"
+                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                CachingStrategy="RecycleElement"
+				SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Padding="10">
+                <Label Text="{Binding Text}"
+                       LineBreakMode="NoWrap"
+                       Style="{DynamicResource ListItemTextStyle}"
+                       FontSize="16"/>
+                <Label Text="{Binding Description}"
+                       LineBreakMode="NoWrap"
+                       Style="{DynamicResource ListItemDetailTextStyle}"
+                       FontSize="13"/>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout> 
+  </ContentPage.Content>
+</ContentPage>

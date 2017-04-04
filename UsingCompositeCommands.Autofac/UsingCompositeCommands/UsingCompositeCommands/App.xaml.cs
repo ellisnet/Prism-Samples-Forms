@@ -26,9 +26,10 @@ namespace UsingCompositeCommands
             Container.RegisterTypeForNavigation<TabB, TabViewModel>();
             Container.RegisterTypeForNavigation<TabC, TabViewModel>();
 
-            var builder = new ContainerBuilder();
-            builder.RegisterType<ApplicationCommands>().As<IApplicationCommands>().SingleInstance();
-            builder.Update(Container);
+            //var builder = new ContainerBuilder();
+            //builder.RegisterType<ApplicationCommands>().As<IApplicationCommands>().SingleInstance();
+            //builder.Update(Container);
+            (Container as IAutofacContainer)?.RegisterType<ApplicationCommands>().As<IApplicationCommands>().SingleInstance();
         }
     }
 }

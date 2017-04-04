@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="VS2017MasterDetail.Views.NewItemPage"
+		Title="New Item"
+            xmlns:vm="clr-namespace:VS2017MasterDetail.ViewModels;"
+            xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+            prism:ViewModelLocator.AutowireViewModel="True"
+            BindingContext="{Binding Source={x:Static vm:DesignTimeViewModelLocator.NewItemPage}}">
+    <!--PRISM-CONVERSION-NOTE: The bottom four attributes of our ContentPage tag above were set for Prism; 
+        the bottom one, setting the BindingContext, only affects design-time - giving us IntelliSense via 
+        Visual Studio - and will not do anything at compile-time or run-time.-->
+	<ContentPage.ToolbarItems>
+        <!--PRISM-CONVERSION-NOTE: replaced Clicked="Save_Clicked" in the line below with:
+            Command="{Binding SaveItemCommand}"-->
+        <ToolbarItem Text="Save" Command="{Binding SaveItemCommand}" />
+	</ContentPage.ToolbarItems>
+	<ContentPage.Content>
+		<StackLayout Spacing="20" Padding="15">
+			<Label Text="Text" FontSize="Medium" />
+			<Entry Text="{Binding Item.Text}" FontSize="Small" />
+			<Label Text="Description" FontSize="Medium" />
+			<Editor Text="{Binding Item.Description}" FontSize="Small" Margin="0" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
