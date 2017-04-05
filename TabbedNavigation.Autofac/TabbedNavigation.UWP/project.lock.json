@@ -22604,7 +22604,7 @@
     "UAP,Version=v10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jeremy\\.nuget\\packages\\": {}
+    "C:\\Users\\jerem\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
@@ -22616,11 +22616,11 @@
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "C:\\GitHome\\Prism-Samples-Forms\\TabbedNavigation.Autofac\\TabbedNavigation\\TabbedNavigation.csproj": {
-              "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\TabbedNavigation.Autofac\\TabbedNavigation\\TabbedNavigation.csproj"
-            },
             "C:\\GitHome\\Prism\\Source\\Xamarin\\Prism.Autofac.Forms\\Prism.Autofac.Forms.csproj": {
               "projectPath": "C:\\GitHome\\Prism\\Source\\Xamarin\\Prism.Autofac.Forms\\Prism.Autofac.Forms.csproj"
+            },
+            "C:\\GitHome\\Prism-Samples-Forms\\TabbedNavigation.Autofac\\TabbedNavigation\\TabbedNavigation.csproj": {
+              "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\TabbedNavigation.Autofac\\TabbedNavigation\\TabbedNavigation.csproj"
             }
           }
         }
