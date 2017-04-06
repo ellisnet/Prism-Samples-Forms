@@ -1,0 +1,449 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Testing.Prism.Autofac.Forms</name>
+    </assembly>
+    <members>
+        <member name="M:Prism.Autofac.Forms.AutofacExtensions.RegisterTypeForNavigation``1(Autofac.IContainer,System.String)">
+            <summary>
+            Registers a Page for navigation.
+            </summary>
+            <typeparam name="TView">The Type of Page to register</typeparam>
+            <param name="container"><see cref="T:Autofac.IContainer"/> used to register type for Navigation.</param>
+            <param name="name">The unique name to register with the Page</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.AutofacExtensions.RegisterTypeForNavigation(Autofac.IContainer,System.Type,System.String)">
+            <summary>
+            Registers a Page for navigation
+            </summary>
+            <param name="container"><see cref="T:Autofac.IContainer"/> used to register type for Navigation.</param>
+            <param name="viewType">The type of Page to register</param>
+            <param name="name">The unique name to register with the Page</param>
+            <returns><see cref="T:Autofac.IContainer"/></returns>
+        </member>
+        <member name="M:Prism.Autofac.Forms.AutofacExtensions.RegisterTypeForNavigation``2(Autofac.IContainer,System.String)">
+            <summary>
+            Registers a Page for navigation.
+            </summary>
+            <typeparam name="TView">The Type of Page to register</typeparam>
+            <typeparam name="TViewModel">The ViewModel to use as the BindingContext for the Page</typeparam>
+            <param name="name">The unique name to register with the Page</param>
+            <param name="container"></param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.AutofacExtensions.RegisterTypeForNavigationOnPlatform``2(Autofac.IContainer,System.String,System.Type,System.Type,System.Type,System.Type,System.Type)">
+            <summary>
+            Registers a Page for navigation based on the current Device OS using a shared ViewModel
+            </summary>
+            <typeparam name="TView">Default View Type to be shared across multiple Device Operating Systems if they are not specified directly.</typeparam>
+            <typeparam name="TViewModel">Shared ViewModel Type</typeparam>
+            <param name="container"><see cref="T:Autofac.IContainer"/> used to register type for Navigation.</param>
+            <param name="name">The unique name to register with the Page. If left empty or null will default to the ViewModel root name. i.e. MyPageViewModel => MyPage</param>
+            <param name="androidView">Android Specific View Type</param>
+            <param name="iOSView">iOS Specific View Type</param>
+            <param name="otherView">Other Platform Specific View Type</param>
+            <param name="windowsView">Windows Specific View Type</param>
+            <param name="winPhoneView">Windows Phone Specific View Type</param>
+            <returns><see cref="T:Autofac.IContainer"/></returns>
+        </member>
+        <member name="M:Prism.Autofac.Forms.AutofacExtensions.RegisterTypeForNavigationOnIdiom``2(Autofac.IContainer,System.String,System.Type,System.Type,System.Type)">
+            <summary>
+            Registers a Page for navigation based on the Device Idiom using a shared ViewModel
+            </summary>
+            <typeparam name="TView">Default View Type to be used across multiple Idioms if they are not specified directly.</typeparam>
+            <typeparam name="TViewModel">The shared ViewModel</typeparam>
+            <param name="container"><see cref="T:Autofac.IContainer"/> used to register type for Navigation.</param>
+            <param name="name">The common name used for Navigation. If left empty or null will default to the ViewModel root name. i.e. MyPageViewModel => MyPage</param>
+            <param name="desktopView">Desktop Specific View Type</param>
+            <param name="tabletView">Tablet Specific View Type</param>
+            <param name="phoneView">Phone Specific View Type</param>
+            <returns><see cref="T:Autofac.IContainer"/></returns>
+        </member>
+        <member name="M:Prism.Autofac.Forms.AutofacExtensions.RegisterTypeIfMissing(Autofac.IContainer,System.Type,System.String,System.Boolean)">
+            <summary>
+            Registers a type in the container only if that type was not already registered,
+            after the container is already created.
+            Uses a new ContainerBuilder instance to update the Container.
+            </summary>
+            <param name="container">The container to register type with</param>
+            <param name="type">The type to register.</param>
+            <param name="name">The name you will use to resolve the component in future.</param>
+            <param name="registerAsSingleton">Registers the type as a singleton.</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.Immutable.AutofacContainer.RegisterComponent(Autofac.Core.IComponentRegistration)">
+            <summary>Add a component to the container.</summary>
+            <param name="registration">The component to add.</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.Immutable.AutofacContainer.RegisterSource(Autofac.Core.IRegistrationSource)">
+            <summary>Add a registration source to the container.</summary>
+            <param name="registrationSource">The registration source to add.</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.Immutable.AutofacContainer.RegisterInstance``1(``0)">
+            <summary>Register an instance as a component.</summary>
+            <typeparam name="T">The type of the instance.</typeparam>
+            <param name="instance">The instance to register.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+            <remarks>If no services are explicitly specified for the instance, the
+            static type <typeparamref name="T" /> will be used as the default service (i.e. *not* <code>instance.GetType()</code>).</remarks>
+        </member>
+        <member name="M:Prism.Autofac.Forms.Immutable.AutofacContainer.RegisterType``1">
+            <summary>
+            Register a component to be created through reflection.
+            </summary>
+            <typeparam name="TImplementer">The type of the component implementation.</typeparam>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+        </member>
+        <member name="M:Prism.Autofac.Forms.Immutable.AutofacContainer.Register``1(System.Func{Autofac.IComponentContext,``0})">
+            <summary>Register a delegate as a component.</summary>
+            <typeparam name="T">The type of the instance.</typeparam>
+            <param name="delegate">The delegate to register.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+        </member>
+        <member name="M:Prism.Autofac.Forms.Immutable.AutofacContainer.Register``1(System.Func{Autofac.IComponentContext,System.Collections.Generic.IEnumerable{Autofac.Core.Parameter},``0})">
+            <summary>Register a delegate as a component.</summary>
+            <typeparam name="T">The type of the instance.</typeparam>
+            <param name="delegate">The delegate to register.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+        </member>
+        <member name="M:Prism.Autofac.Forms.Immutable.AutofacContainer.RegisterGeneric(System.Type)">
+            <summary>
+            Register an un-parameterised generic type, e.g. Repository&lt;&gt;.
+            Concrete types will be made as they are requested, e.g. with Resolve&lt;Repository&lt;int&gt;&gt;().
+            </summary>
+            <param name="implementer">The open generic implementation type.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+        </member>
+        <member name="M:Prism.Autofac.Forms.Immutable.AutofacContainer.RegisterAssemblyTypes(System.Reflection.Assembly[])">
+            <summary>Register the types in an assembly.</summary>
+            <param name="assemblies">The assemblies from which to register types.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+        </member>
+        <member name="M:Prism.Autofac.Forms.Immutable.AutofacContainer.RegisterTypes(System.Type[])">
+            <summary>Register the types in a list.</summary>
+            <param name="types">The types to register.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+        </member>
+        <member name="M:Prism.Autofac.Forms.Immutable.AutofacContainer.RegisterAdapter``2(System.Func{Autofac.IComponentContext,System.Collections.Generic.IEnumerable{Autofac.Core.Parameter},``0,``1})">
+            <summary>
+            Adapt all components implementing service <typeparamref name="TFrom" />
+            to provide <typeparamref name="TTo" /> using the provided <paramref name="adapter" />
+            function.
+            </summary>
+            <typeparam name="TFrom">Service type to adapt from.</typeparam>
+            <typeparam name="TTo">Service type to adapt to. Must not be the
+            same as <typeparamref name="TFrom" />.</typeparam>
+            <param name="adapter">Function adapting <typeparamref name="TFrom" /> to
+            service <typeparamref name="TTo" />, given the context and parameters.</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.Immutable.AutofacContainer.RegisterAdapter``2(System.Func{Autofac.IComponentContext,``0,``1})">
+            <summary>
+            Adapt all components implementing service <typeparamref name="TFrom" />
+            to provide <typeparamref name="TTo" /> using the provided <paramref name="adapter" />
+            function.
+            </summary>
+            <typeparam name="TFrom">Service type to adapt from.</typeparam>
+            <typeparam name="TTo">Service type to adapt to. Must not be the
+            same as <typeparamref name="TFrom" />.</typeparam>
+            <param name="adapter">Function adapting <typeparamref name="TFrom" /> to
+            service <typeparamref name="TTo" />, given the context.</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.Immutable.AutofacContainer.RegisterAdapter``2(System.Func{``0,``1})">
+            <summary>
+            Adapt all components implementing service <typeparamref name="TFrom" />
+            to provide <typeparamref name="TTo" /> using the provided <paramref name="adapter" />
+            function.
+            </summary>
+            <typeparam name="TFrom">Service type to adapt from.</typeparam>
+            <typeparam name="TTo">Service type to adapt to. Must not be the
+            same as <typeparamref name="TFrom" />.</typeparam>
+            <param name="adapter">Function adapting <typeparamref name="TFrom" /> to
+            service <typeparamref name="TTo" />.</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.Immutable.AutofacContainer.RegisterGenericDecorator(System.Type,System.Type,System.Object,System.Object)">
+            <summary>
+            Decorate all components implementing open generic service <paramref name="decoratedServiceType" />.
+            The <paramref name="fromKey" /> and <paramref name="toKey" /> parameters must be different values.
+            </summary>
+            <param name="decoratedServiceType">Service type being decorated. Must be an open generic type.</param>
+            <param name="fromKey">Service key or name associated with the components being decorated.</param>
+            <param name="toKey">Service key or name given to the decorated components.</param>
+            <param name="decoratorType">The type of the decorator. Must be an open generic type, and accept a parameter
+            of type <paramref name="decoratedServiceType" />, which will be set to the instance being decorated.</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.Immutable.AutofacContainer.RegisterDecorator``1(System.Func{Autofac.IComponentContext,System.Collections.Generic.IEnumerable{Autofac.Core.Parameter},``0,``0},System.Object,System.Object)">
+            <summary>
+            Decorate all components implementing service <typeparamref name="TService" />
+            using the provided <paramref name="decorator" /> function.
+            The <paramref name="fromKey" /> and <paramref name="toKey" /> parameters must be different values.
+            </summary>
+            <typeparam name="TService">Service type being decorated.</typeparam>
+            <param name="decorator">Function decorating a component instance that provides
+            <typeparamref name="TService" />, given the context and parameters.</param>
+            <param name="fromKey">Service key or name associated with the components being decorated.</param>
+            <param name="toKey">Service key or name given to the decorated components.</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.Immutable.AutofacContainer.RegisterDecorator``1(System.Func{Autofac.IComponentContext,``0,``0},System.Object,System.Object)">
+            <summary>
+            Decorate all components implementing service <typeparamref name="TService" />
+            using the provided <paramref name="decorator" /> function.
+            The <paramref name="fromKey" /> and <paramref name="toKey" /> parameters must be different values.
+            </summary>
+            <typeparam name="TService">Service type being decorated.</typeparam>
+            <param name="decorator">Function decorating a component instance that provides
+            <typeparamref name="TService" />, given the context.</param>
+            <param name="fromKey">Service key or name associated with the components being decorated.</param>
+            <param name="toKey">Service key or name given to the decorated components.</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.Immutable.AutofacContainer.RegisterDecorator``1(System.Func{``0,``0},System.Object,System.Object)">
+            <summary>
+            Decorate all components implementing service <typeparamref name="TService" />
+            using the provided <paramref name="decorator" /> function.
+            The <paramref name="fromKey" /> and <paramref name="toKey" /> parameters must be different values.
+            </summary>
+            <typeparam name="TService">Service type being decorated.</typeparam>
+            <param name="decorator">Function decorating a component instance that provides
+            <typeparamref name="TService" />.</param>
+            <param name="fromKey">Service key or name associated with the components being decorated.</param>
+            <param name="toKey">Service key or name given to the decorated components.</param>
+        </member>
+        <member name="T:Prism.Autofac.Forms.Immutable.RuntimeComponentRegistry">
+            <summary>
+            Implementation of IComponentRegistry that is provided for querying Type/Page registrations after
+            the Prism Autofac container has been built; but does not allow subsequent registrations.
+            </summary>
+        </member>
+        <member name="P:Prism.Autofac.Forms.IAutofacContainer.IsContainerBuilt">
+            <summary>
+            Identifies if the wrapped Autofac IContainer instance has been built or not.
+            (Type/page registrations can no longer be made after it has been built.
+            </summary>
+        </member>
+        <member name="M:Prism.Autofac.Forms.IAutofacContainer.IsTypeRegistered(System.Type)">
+            <summary>
+            Identifies if a particular Type has already been registered for the wrapped IContainer instance (to be built)
+            </summary>
+            <param name="registeredType">The Type to check</param>
+            <returns>True if the Type is already registered, False if it is not.</returns>
+        </member>
+        <member name="M:Prism.Autofac.Forms.IAutofacContainer.RegisterComponent(Autofac.Core.IComponentRegistration)">
+            <summary>Add a component to the container.</summary>
+            <param name="registration">The component to add.</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.IAutofacContainer.RegisterSource(Autofac.Core.IRegistrationSource)">
+            <summary>Add a registration source to the container.</summary>
+            <param name="registrationSource">The registration source to add.</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.IAutofacContainer.RegisterInstance``1(``0)">
+            <summary>Register an instance as a component.</summary>
+            <typeparam name="T">The type of the instance.</typeparam>
+            <param name="instance">The instance to register.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+            <remarks>If no services are explicitly specified for the instance, the
+            static type <typeparamref name="T" /> will be used as the default service (i.e. *not* <code>instance.GetType()</code>).</remarks>
+        </member>
+        <member name="M:Prism.Autofac.Forms.IAutofacContainer.RegisterType``1">
+            <summary>
+            Register a component to be created through reflection.
+            </summary>
+            <typeparam name="TImplementer">The type of the component implementation.</typeparam>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+        </member>
+        <member name="M:Prism.Autofac.Forms.IAutofacContainer.Register``1(System.Func{Autofac.IComponentContext,``0})">
+            <summary>Register a delegate as a component.</summary>
+            <typeparam name="T">The type of the instance.</typeparam>
+            <param name="delegate">The delegate to register.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+        </member>
+        <member name="M:Prism.Autofac.Forms.IAutofacContainer.Register``1(System.Func{Autofac.IComponentContext,System.Collections.Generic.IEnumerable{Autofac.Core.Parameter},``0})">
+            <summary>Register a delegate as a component.</summary>
+            <typeparam name="T">The type of the instance.</typeparam>
+            <param name="delegate">The delegate to register.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+        </member>
+        <member name="M:Prism.Autofac.Forms.IAutofacContainer.RegisterGeneric(System.Type)">
+            <summary>
+            Register an un-parameterised generic type, e.g. Repository&lt;&gt;.
+            Concrete types will be made as they are requested, e.g. with Resolve&lt;Repository&lt;int&gt;&gt;().
+            </summary>
+            <param name="implementer">The open generic implementation type.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+        </member>
+        <member name="M:Prism.Autofac.Forms.IAutofacContainer.RegisterAssemblyTypes(System.Reflection.Assembly[])">
+            <summary>Register the types in an assembly.</summary>
+            <param name="assemblies">The assemblies from which to register types.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+        </member>
+        <member name="M:Prism.Autofac.Forms.IAutofacContainer.RegisterTypes(System.Type[])">
+            <summary>Register the types in a list.</summary>
+            <param name="types">The types to register.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+        </member>
+        <member name="M:Prism.Autofac.Forms.IAutofacContainer.RegisterAdapter``2(System.Func{Autofac.IComponentContext,System.Collections.Generic.IEnumerable{Autofac.Core.Parameter},``0,``1})">
+            <summary>
+            Adapt all components implementing service <typeparamref name="TFrom" />
+            to provide <typeparamref name="TTo" /> using the provided <paramref name="adapter" />
+            function.
+            </summary>
+            <typeparam name="TFrom">Service type to adapt from.</typeparam>
+            <typeparam name="TTo">Service type to adapt to. Must not be the
+            same as <typeparamref name="TFrom" />.</typeparam>
+            <param name="adapter">Function adapting <typeparamref name="TFrom" /> to
+            service <typeparamref name="TTo" />, given the context and parameters.</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.IAutofacContainer.RegisterAdapter``2(System.Func{Autofac.IComponentContext,``0,``1})">
+            <summary>
+            Adapt all components implementing service <typeparamref name="TFrom" />
+            to provide <typeparamref name="TTo" /> using the provided <paramref name="adapter" />
+            function.
+            </summary>
+            <typeparam name="TFrom">Service type to adapt from.</typeparam>
+            <typeparam name="TTo">Service type to adapt to. Must not be the
+            same as <typeparamref name="TFrom" />.</typeparam>
+            <param name="adapter">Function adapting <typeparamref name="TFrom" /> to
+            service <typeparamref name="TTo" />, given the context.</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.IAutofacContainer.RegisterAdapter``2(System.Func{``0,``1})">
+            <summary>
+            Adapt all components implementing service <typeparamref name="TFrom" />
+            to provide <typeparamref name="TTo" /> using the provided <paramref name="adapter" />
+            function.
+            </summary>
+            <typeparam name="TFrom">Service type to adapt from.</typeparam>
+            <typeparam name="TTo">Service type to adapt to. Must not be the
+            same as <typeparamref name="TFrom" />.</typeparam>
+            <param name="adapter">Function adapting <typeparamref name="TFrom" /> to
+            service <typeparamref name="TTo" />.</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.IAutofacContainer.RegisterGenericDecorator(System.Type,System.Type,System.Object,System.Object)">
+            <summary>
+            Decorate all components implementing open generic service <paramref name="decoratedServiceType" />.
+            The <paramref name="fromKey" /> and <paramref name="toKey" /> parameters must be different values.
+            </summary>
+            <param name="decoratedServiceType">Service type being decorated. Must be an open generic type.</param>
+            <param name="fromKey">Service key or name associated with the components being decorated.</param>
+            <param name="toKey">Service key or name given to the decorated components.</param>
+            <param name="decoratorType">The type of the decorator. Must be an open generic type, and accept a parameter
+            of type <paramref name="decoratedServiceType" />, which will be set to the instance being decorated.</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.IAutofacContainer.RegisterDecorator``1(System.Func{Autofac.IComponentContext,System.Collections.Generic.IEnumerable{Autofac.Core.Parameter},``0,``0},System.Object,System.Object)">
+            <summary>
+            Decorate all components implementing service <typeparamref name="TService" />
+            using the provided <paramref name="decorator" /> function.
+            The <paramref name="fromKey" /> and <paramref name="toKey" /> parameters must be different values.
+            </summary>
+            <typeparam name="TService">Service type being decorated.</typeparam>
+            <param name="decorator">Function decorating a component instance that provides
+            <typeparamref name="TService" />, given the context and parameters.</param>
+            <param name="fromKey">Service key or name associated with the components being decorated.</param>
+            <param name="toKey">Service key or name given to the decorated components.</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.IAutofacContainer.RegisterDecorator``1(System.Func{Autofac.IComponentContext,``0,``0},System.Object,System.Object)">
+            <summary>
+            Decorate all components implementing service <typeparamref name="TService" />
+            using the provided <paramref name="decorator" /> function.
+            The <paramref name="fromKey" /> and <paramref name="toKey" /> parameters must be different values.
+            </summary>
+            <typeparam name="TService">Service type being decorated.</typeparam>
+            <param name="decorator">Function decorating a component instance that provides
+            <typeparamref name="TService" />, given the context.</param>
+            <param name="fromKey">Service key or name associated with the components being decorated.</param>
+            <param name="toKey">Service key or name given to the decorated components.</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.IAutofacContainer.RegisterDecorator``1(System.Func{``0,``0},System.Object,System.Object)">
+            <summary>
+            Decorate all components implementing service <typeparamref name="TService" />
+            using the provided <paramref name="decorator" /> function.
+            The <paramref name="fromKey" /> and <paramref name="toKey" /> parameters must be different values.
+            </summary>
+            <typeparam name="TService">Service type being decorated.</typeparam>
+            <param name="decorator">Function decorating a component instance that provides
+            <typeparamref name="TService" />.</param>
+            <param name="fromKey">Service key or name associated with the components being decorated.</param>
+            <param name="toKey">Service key or name given to the decorated components.</param>
+        </member>
+        <member name="T:Prism.Autofac.Forms.IPreRegisterTypes">
+            <summary>
+            Identifies a class (typically an implementation of IModule) that has Type/Page registration
+            requirements that must be handled, prior to building the Prism Autofac container.
+            </summary>
+        </member>
+        <member name="M:Prism.Autofac.Forms.IPreRegisterTypes.RegisterTypes(Prism.Autofac.Forms.IAutofacContainer)">
+            <summary>
+            Method that is executed during module cataloging to register any Types/Pages that are required by the module.
+            </summary>
+            <param name="container">The container that registration operations will be performed on</param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.Modularity.AutofacModuleInitializer.#ctor(Autofac.IContainer)">
+            <summary>
+            Create a new instance of <see cref="T:Prism.Autofac.Forms.Modularity.AutofacModuleInitializer"/> with <paramref name="context"/>
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Prism.Autofac.Forms.Modularity.AutofacModuleInitializer.CreateModule(System.Type)">
+            <summary>
+            Create the <see cref="T:Prism.Modularity.IModule"/> for <paramref name="moduleType"/> by resolving from <see cref="F:Prism.Autofac.Forms.Modularity.AutofacModuleInitializer._context"/>
+            </summary>
+            <param name="moduleType">Type of module to create</param>
+            <returns>An isntance of <see cref="T:Prism.Modularity.IModule"/> for <paramref name="moduleType"/> if exists; otherwise <see langword="null" /></returns>
+        </member>
+        <member name="T:Prism.Autofac.Navigation.AutofacPageNavigationService">
+            <summary>
+            Page navigation service for using Autofac
+            </summary>
+        </member>
+        <member name="M:Prism.Autofac.Navigation.AutofacPageNavigationService.#ctor(Autofac.IContainer,Prism.Common.IApplicationProvider,Prism.Logging.ILoggerFacade)">
+            <summary>
+            Create a new instance of <see cref="T:Prism.Autofac.Navigation.AutofacPageNavigationService"/> with <paramref name="container"/>
+            </summary>
+            <param name="applicationProvider">An instance of <see cref="T:Prism.Common.IApplicationProvider"/></param>
+            <param name="container">An instance of <see cref="T:Autofac.IContainer"/></param>
+            <param name="logger">An instance of <see cref="T:Prism.Logging.ILoggerFacade"/></param>
+        </member>
+        <member name="M:Prism.Autofac.Navigation.AutofacPageNavigationService.CreatePage(System.String)">
+            <summary>
+            Resolve a <see cref="T:Xamarin.Forms.Page"/> from <see cref="F:Prism.Autofac.Navigation.AutofacPageNavigationService._container"/> for <paramref name="name"/>
+            </summary>
+            <param name="name">Page to resolve</param>
+            <returns>A <see cref="T:Xamarin.Forms.Page"/></returns>
+        </member>
+        <member name="T:Prism.Autofac.PrismApplication">
+            <summary>
+            Application base class using Autofac
+            </summary>
+        </member>
+        <member name="F:Prism.Autofac.PrismApplication._navigationServiceName">
+            <summary>
+            Service key used when registering the <see cref="T:Prism.Autofac.Navigation.AutofacPageNavigationService"/> with the container
+            </summary>
+        </member>
+        <member name="M:Prism.Autofac.PrismApplication.#ctor(Prism.Autofac.Forms.IPlatformInitializer)">
+            <summary>
+            Create a new instance of <see cref="T:Prism.Autofac.PrismApplication"/>
+            </summary>
+            <param name="initializer">Class to initialize platform instances</param>
+            <remarks>
+            The method <see cref="!:IPlatformInitializer.RegisterTypes(IAutofacContainer)"/> will be called after <see cref="!:PrismApplication.RegisterTypes()"/> 
+            to allow for registering platform specific instances.
+            </remarks>
+        </member>
+        <member name="M:Prism.Autofac.PrismApplication.CreateContainer">
+            <summary>
+            Create a default instance of <see cref="T:Prism.Autofac.Forms.IAutofacContainer" />
+            </summary>
+            <returns>An instance of <see cref="T:Prism.Autofac.Forms.IAutofacContainer" /></returns>
+        </member>
+        <member name="M:Prism.Autofac.PrismApplication.CreateNavigationService">
+            <summary>
+            Create instance of <see cref="T:Prism.Navigation.INavigationService"/>
+            </summary>
+            <remarks>
+            The <see cref="F:Prism.Autofac.PrismApplication._navigationServiceName"/> is used as service key when resolving
+            </remarks>
+            <returns>Instance of <see cref="T:Prism.Navigation.INavigationService"/></returns>
+        </member>
+        <member name="M:Prism.Autofac.PrismApplication.FinishContainerConfiguration">
+            <summary>
+            Finish the container's configuration after all other types are registered.
+            </summary>
+        </member>
+    </members>
+</doc>
