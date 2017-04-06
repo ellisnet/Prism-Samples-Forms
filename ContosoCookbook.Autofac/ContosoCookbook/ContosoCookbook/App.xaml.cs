@@ -19,18 +19,11 @@ namespace ContosoCookbook
 
         protected override void RegisterTypes()
         {
-            //Container.RegisterType<IRecipeService, RecipeService>(new ContainerControlledLifetimeManager());
-
             Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<MainPage>();
             Container.RegisterTypeForNavigation<RecipePage>();
 
-            //var builder = new ContainerBuilder();
-
-            //builder.RegisterType<RecipeService>().As<IRecipeService>().SingleInstance();
-
-            //builder.Update(Container);
-            (Container as IAutofacContainer)?.RegisterType<RecipeService>().As<IRecipeService>().SingleInstance();
+            Container.RegisterType<RecipeService>().As<IRecipeService>().SingleInstance();
         }
     }
 }

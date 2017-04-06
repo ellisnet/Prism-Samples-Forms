@@ -19,10 +19,9 @@ namespace UsingDependencyService
         {
             Container.RegisterTypeForNavigation<MainPage>();
 
-            //The Autofac version of Prism.Forms does not resolve dependencies directly from the Xamarin.Forms
-            // DependencyService, so the following line re-registers the dependency in the Prism Autofac container
-            (Container as IAutofacContainer)?.Register(ctx => Xamarin.Forms.DependencyService.Get<ITextToSpeech>())
-                .As<ITextToSpeech>();
+            //The Autofac version of Prism.Forms does not automatically resolve dependencies directly from the Xamarin.Forms
+            // DependencyService, so the following extra line registers the dependency in the Prism Autofac container
+            Container.Register(ctx => Xamarin.Forms.DependencyService.Get<ITextToSpeech>()).As<ITextToSpeech>();
         }
     }
 }

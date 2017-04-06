@@ -4,7 +4,6 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
-using Autofac;
 using Prism.Autofac.Forms;
 
 namespace UsingCompositeCommands.iOS
@@ -26,7 +25,6 @@ namespace UsingCompositeCommands.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
             LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options);
@@ -35,7 +33,7 @@ namespace UsingCompositeCommands.iOS
 
     public class iOSInitializer : IPlatformInitializer
     {
-        public void RegisterTypes(IContainer container)
+        public void RegisterTypes(IAutofacContainer container)
         {
 
         }

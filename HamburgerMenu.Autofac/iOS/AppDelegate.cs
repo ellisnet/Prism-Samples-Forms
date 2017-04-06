@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Autofac;
 using Foundation;
 using Prism.Autofac.Forms;
 using UIKit;
@@ -15,7 +14,6 @@ namespace HamburgerMenu.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
             LoadApplication( new App(new iOSInitializer()) );
 
             return base.FinishedLaunching( app, options );
@@ -24,7 +22,7 @@ namespace HamburgerMenu.iOS
 
     public class iOSInitializer : IPlatformInitializer
     {
-        public void RegisterTypes(IContainer container)
+        public void RegisterTypes(IAutofacContainer container)
         {
 
         }

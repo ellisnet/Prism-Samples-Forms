@@ -1,18 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using Autofac;
 using Prism.Navigation;
 using Prism.Mvvm;
 
 using Xamarin.Forms;
 
+using Autofac;
+using Prism.Autofac.Forms;
+
 namespace TabbedNavigation.Views
 {
     public partial class DynamicTabbedPage : TabbedPage, INavigatingAware
     {
-        IContainer _container { get; }
+        IAutofacContainer _container { get; }
 
-        public DynamicTabbedPage(IContainer container)
+        public DynamicTabbedPage(IAutofacContainer container)
         {
             InitializeComponent();
             _container = container;
@@ -28,7 +30,6 @@ namespace TabbedNavigation.Views
 
         private void AddChild(string name, NavigationParameters parameters)
         {
-            //var page = _container.Resolve<object>(name) as Page;
             var page = _container.ResolveNamed<Page>(name);
 
             if(ViewModelLocator.GetAutowireViewModel(page) == null)

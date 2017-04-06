@@ -7,7 +7,6 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-using Autofac;
 using Prism.Autofac.Forms;
 
 namespace UsingPageDialogService.Droid
@@ -21,14 +20,13 @@ namespace UsingPageDialogService.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
-            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
             LoadApplication(new App(new AndroidInitializer()));
         }
     }
 
     public class AndroidInitializer : IPlatformInitializer
     {
-        public void RegisterTypes(IContainer container)
+        public void RegisterTypes(IAutofacContainer container)
         {
 
         }

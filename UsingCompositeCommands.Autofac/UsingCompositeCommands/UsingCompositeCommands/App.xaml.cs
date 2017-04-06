@@ -1,7 +1,6 @@
 ﻿using UsingCompositeCommands.ViewModels;
 using UsingCompositeCommands.Views;
 
-using Autofac;
 using Prism.Autofac;
 using Prism.Autofac.Forms;
 
@@ -26,10 +25,7 @@ namespace UsingCompositeCommands
             Container.RegisterTypeForNavigation<TabB, TabViewModel>();
             Container.RegisterTypeForNavigation<TabC, TabViewModel>();
 
-            //var builder = new ContainerBuilder();
-            //builder.RegisterType<ApplicationCommands>().As<IApplicationCommands>().SingleInstance();
-            //builder.Update(Container);
-            (Container as IAutofacContainer)?.RegisterType<ApplicationCommands>().As<IApplicationCommands>().SingleInstance();
+            Container.RegisterType<ApplicationCommands>().As<IApplicationCommands>().SingleInstance();
         }
     }
 }

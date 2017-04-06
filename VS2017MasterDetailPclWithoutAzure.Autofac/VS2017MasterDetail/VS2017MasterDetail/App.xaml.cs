@@ -48,7 +48,7 @@ namespace VS2017MasterDetail
             Container.RegisterTypeForNavigation<ItemsPage, ItemsViewModel>();
             Container.RegisterTypeForNavigation<NewItemPage, NewItemViewModel>();
 
-            (Container as IAutofacContainer)?.RegisterType<MockDataStore>().As<IDataStore<Item>>();
+            Container.RegisterType<MockDataStore>().As<IDataStore<Item>>();
         }
 
         public static void SetMainPage()

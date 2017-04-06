@@ -1,5 +1,4 @@
 ﻿using Windows.UI.Xaml;
-using Autofac;
 using Prism.Autofac.Forms;
 
 namespace UsingModules.UWP
@@ -10,14 +9,13 @@ namespace UsingModules.UWP
         {
             this.InitializeComponent();
 
-            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
             LoadApplication(new UsingModules.App(new UwpInitializer()));
         }
     }
 
     public class UwpInitializer : IPlatformInitializer
     {
-        public void RegisterTypes(IContainer container)
+        public void RegisterTypes(IAutofacContainer container)
         {
 
         }

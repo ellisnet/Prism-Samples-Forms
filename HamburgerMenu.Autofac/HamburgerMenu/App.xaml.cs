@@ -1,5 +1,4 @@
-﻿using Autofac;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using HamburgerMenu.Services;
 using HamburgerMenu.Views;
 using Prism.Autofac;
@@ -13,7 +12,7 @@ namespace HamburgerMenu
     {
         public App(IPlatformInitializer initializer = null) : base(initializer) { }
 
-        public static new App Current
+        public new static App Current
         {
             get { return Application.Current as App; }
         }
@@ -38,7 +37,7 @@ namespace HamburgerMenu
             Container.RegisterTypeForNavigation<ViewB>();
             Container.RegisterTypeForNavigation<ViewC>();
 
-            (Container as IAutofacContainer)?.RegisterType<AuthenticationService>().As<IAuthenticationService>().SingleInstance();
+            Container.RegisterType<AuthenticationService>().As<IAuthenticationService>().SingleInstance();
         }
 
         protected override void OnStart()

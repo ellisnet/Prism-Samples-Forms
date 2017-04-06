@@ -12,7 +12,6 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using Autofac;
 using Prism.Autofac.Forms;
 using UsingDependencyService.Services;
 using UsingDependencyService.UWP.Services;
@@ -25,20 +24,20 @@ namespace UsingDependencyService.UWP
         {
             this.InitializeComponent();
 
-            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
             LoadApplication(new UsingDependencyService.App(new UwpInitializer()));
         }
     }
 
     public class UwpInitializer : IPlatformInitializer
     {
-        public void RegisterTypes(IContainer container)
+        public void RegisterTypes(IAutofacContainer container)
         {
             //One option would be to register the ITextToSpeech implementation here - this does not
             // use or require the Xamarin.Forms DependencyService.
             // But since the platform-specific implementation of ITextToSpeech *is* registered with
             // the DependencyService, the Autofac registration is being done in the portable library.
-            //(container as IAutofacContainer)?.RegisterType<TextToSpeech_UWP>().As<ITextToSpeech>();
+            
+            //container.RegisterType<TextToSpeech_UWP>().As<ITextToSpeech>();
         }
     }
 }

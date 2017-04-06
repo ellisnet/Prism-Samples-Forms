@@ -12,7 +12,6 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using Autofac;
 using Prism.Autofac.Forms;
 
 namespace ContosoCookbook.UWP
@@ -23,17 +22,15 @@ namespace ContosoCookbook.UWP
         {
             this.InitializeComponent();
 
-            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
             LoadApplication(new ContosoCookbook.App(new UwpInitializer()));
         }
     }
 
     public class UwpInitializer : IPlatformInitializer
     {
-        public void RegisterTypes(IContainer container)
+        public void RegisterTypes(IAutofacContainer container)
         {
 
         }
     }
-
 }

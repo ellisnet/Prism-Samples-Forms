@@ -4,7 +4,6 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
-using Autofac;
 using Prism.Autofac.Forms;
 using UsingDependencyService.iOS.Services;
 using UsingDependencyService.Services;
@@ -28,7 +27,6 @@ namespace UsingDependencyService.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
             LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options);
@@ -37,13 +35,14 @@ namespace UsingDependencyService.iOS
 
     public class iOSInitializer : IPlatformInitializer
     {
-        public void RegisterTypes(IContainer container)
+        public void RegisterTypes(IAutofacContainer container)
         {
             //One option would be to register the ITextToSpeech implementation here - this does not
             // use or require the Xamarin.Forms DependencyService.
             // But since the platform-specific implementation of ITextToSpeech *is* registered with
             // the DependencyService, the Autofac registration is being done in the portable library.
-            //(container as IAutofacContainer)?.RegisterType<TextToSpeech_iOS>().As<ITextToSpeech>();
+            
+            //container.RegisterType<TextToSpeech_iOS>().As<ITextToSpeech>();
         }
     }
 }

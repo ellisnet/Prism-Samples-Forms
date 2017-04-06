@@ -1,5 +1,4 @@
 ﻿using System;
-using Autofac;
 using Prism.Modularity;
 using Prism.Autofac;
 using Prism.Autofac.Forms;
@@ -25,14 +24,6 @@ namespace UsingModules
         {
             Container.RegisterTypeForNavigation<MainNavigationPage>();
             Container.RegisterTypeForNavigation<MainPage>();
-
-            //Register any types needed for module instantiation
-            //var builder = new ContainerBuilder();
-
-            ////It seems like registering IContainer should be handled by the Prism.Autofac.Forms library itself.
-            //builder.Register(c => this.Container).As<IContainer>();
-
-            //builder.Update(Container);
         }
 
         protected override void ConfigureModuleCatalog()

@@ -1,5 +1,4 @@
-﻿using Autofac;
-using Prism.Autofac.Forms;
+﻿using Prism.Autofac.Forms;
 using Prism.Modularity;
 using UsingModules.SampleModule.Views;
 using Xamarin.Forms.Xaml;
@@ -9,8 +8,8 @@ namespace UsingModules.SampleModule
 {
     public class SampleModule : IModule, IPreRegisterTypes
     {
-        private readonly IContainer _container;
-        public SampleModule(IContainer container)
+        private readonly IAutofacContainer _container;
+        public SampleModule(IAutofacContainer container)
         {
             //Need to keep this constructor very light because it will be called
             //  on app start in order to run the RegisterTypes() method -
