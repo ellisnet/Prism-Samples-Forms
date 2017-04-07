@@ -4290,16 +4290,16 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\GitHome\\Prism-Samples-Forms\\UsingModules.Autofac\\UsingModules\\UsingModules\\UsingModules.csproj",
+      "projectUniqueName": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_NetStandard\\UsingModules\\UsingModules\\UsingModules\\UsingModules.csproj",
       "projectName": "UsingModules",
-      "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\UsingModules.Autofac\\UsingModules\\UsingModules\\UsingModules.csproj",
-      "projectJsonPath": "C:\\GitHome\\Prism-Samples-Forms\\UsingModules.Autofac\\UsingModules\\UsingModules\\project.json",
+      "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_NetStandard\\UsingModules\\UsingModules\\UsingModules\\UsingModules.csproj",
+      "projectJsonPath": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_NetStandard\\UsingModules\\UsingModules\\UsingModules\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "netstandard1.4": {
           "projectReferences": {
-            "C:\\GitHome\\Prism-Samples-Forms\\UsingModules.Autofac\\UsingModules\\UsingModules.SampleModule\\UsingModules.SampleModule.csproj": {
-              "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\UsingModules.Autofac\\UsingModules\\UsingModules.SampleModule\\UsingModules.SampleModule.csproj"
+            "C:\\GitHome\\Prism-Samples-Forms\\Autofac_NetStandard\\UsingModules\\UsingModules\\UsingModules.SampleModule\\UsingModules.SampleModule.csproj": {
+              "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_NetStandard\\UsingModules\\UsingModules\\UsingModules.SampleModule\\UsingModules.SampleModule.csproj"
             }
           }
         }

@@ -1,0 +1,17 @@
+﻿{
+  "supports": {},
+  "dependencies": {
+    "Autofac": "4.5.0",
+    "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
+    "NETStandard.Library": "1.6.1",
+    "Prism.Core": "6.3.0",
+    "Prism.Forms": "6.3.0",
+    "Xam.Plugins.Settings": "2.5.4",
+    "Xamarin.Forms": "2.3.4.224"
+  },
+  "frameworks": {
+    "netstandard1.4": {
+      "imports": "portable-net45+wpa81+wp8+win8"
+    }
+  }
+}

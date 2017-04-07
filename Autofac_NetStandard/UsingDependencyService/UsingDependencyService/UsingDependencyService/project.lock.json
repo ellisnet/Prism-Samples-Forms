@@ -4273,10 +4273,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\GitHome\\Prism-Samples-Forms\\UsingDependencyService.Autofac\\UsingDependencyService\\UsingDependencyService\\UsingDependencyService.csproj",
+      "projectUniqueName": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_NetStandard\\UsingDependencyService\\UsingDependencyService\\UsingDependencyService\\UsingDependencyService.csproj",
       "projectName": "UsingDependencyService",
-      "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\UsingDependencyService.Autofac\\UsingDependencyService\\UsingDependencyService\\UsingDependencyService.csproj",
-      "projectJsonPath": "C:\\GitHome\\Prism-Samples-Forms\\UsingDependencyService.Autofac\\UsingDependencyService\\UsingDependencyService\\project.json",
+      "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_NetStandard\\UsingDependencyService\\UsingDependencyService\\UsingDependencyService\\UsingDependencyService.csproj",
+      "projectJsonPath": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_NetStandard\\UsingDependencyService\\UsingDependencyService\\UsingDependencyService\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

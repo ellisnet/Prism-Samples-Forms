@@ -4273,10 +4273,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\GitHome\\Prism-Samples-Forms\\UsingPageDialogService.Autofac\\UsingPageDialogService\\UsingPageDialogService\\UsingPageDialogService.csproj",
+      "projectUniqueName": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_NetStandard\\UsingPageDialogService\\UsingPageDialogService\\UsingPageDialogService\\UsingPageDialogService.csproj",
       "projectName": "UsingPageDialogService",
-      "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\UsingPageDialogService.Autofac\\UsingPageDialogService\\UsingPageDialogService\\UsingPageDialogService.csproj",
-      "projectJsonPath": "C:\\GitHome\\Prism-Samples-Forms\\UsingPageDialogService.Autofac\\UsingPageDialogService\\UsingPageDialogService\\project.json",
+      "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_NetStandard\\UsingPageDialogService\\UsingPageDialogService\\UsingPageDialogService\\UsingPageDialogService.csproj",
+      "projectJsonPath": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_NetStandard\\UsingPageDialogService\\UsingPageDialogService\\UsingPageDialogService\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

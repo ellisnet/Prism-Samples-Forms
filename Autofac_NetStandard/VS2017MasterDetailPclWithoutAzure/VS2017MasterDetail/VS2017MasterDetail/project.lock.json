@@ -4273,10 +4273,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\GitHome\\Prism-Samples-Forms\\VS2017MasterDetailPclWithoutAzure.Autofac\\VS2017MasterDetail\\VS2017MasterDetail\\VS2017MasterDetail.csproj",
+      "projectUniqueName": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_NetStandard\\VS2017MasterDetailPclWithoutAzure\\VS2017MasterDetail\\VS2017MasterDetail\\VS2017MasterDetail.csproj",
       "projectName": "VS2017MasterDetail",
-      "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\VS2017MasterDetailPclWithoutAzure.Autofac\\VS2017MasterDetail\\VS2017MasterDetail\\VS2017MasterDetail.csproj",
-      "projectJsonPath": "C:\\GitHome\\Prism-Samples-Forms\\VS2017MasterDetailPclWithoutAzure.Autofac\\VS2017MasterDetail\\VS2017MasterDetail\\project.json",
+      "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_NetStandard\\VS2017MasterDetailPclWithoutAzure\\VS2017MasterDetail\\VS2017MasterDetail\\VS2017MasterDetail.csproj",
+      "projectJsonPath": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_NetStandard\\VS2017MasterDetailPclWithoutAzure\\VS2017MasterDetail\\VS2017MasterDetail\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

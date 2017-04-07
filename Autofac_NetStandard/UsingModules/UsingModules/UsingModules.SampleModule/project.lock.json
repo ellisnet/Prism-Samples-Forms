@@ -4273,10 +4273,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\GitHome\\Prism-Samples-Forms\\UsingModules.Autofac\\UsingModules\\UsingModules.SampleModule\\UsingModules.SampleModule.csproj",
+      "projectUniqueName": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_NetStandard\\UsingModules\\UsingModules\\UsingModules.SampleModule\\UsingModules.SampleModule.csproj",
       "projectName": "UsingModules.SampleModule",
-      "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\UsingModules.Autofac\\UsingModules\\UsingModules.SampleModule\\UsingModules.SampleModule.csproj",
-      "projectJsonPath": "C:\\GitHome\\Prism-Samples-Forms\\UsingModules.Autofac\\UsingModules\\UsingModules.SampleModule\\project.json",
+      "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_NetStandard\\UsingModules\\UsingModules\\UsingModules.SampleModule\\UsingModules.SampleModule.csproj",
+      "projectJsonPath": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_NetStandard\\UsingModules\\UsingModules\\UsingModules.SampleModule\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

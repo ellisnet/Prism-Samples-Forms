@@ -128,10 +128,11 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Prism\Source\Xamarin\Prism.Autofac.Forms\Prism.Autofac.Forms.csproj">
-      <Project>{943664cf-3a0c-4eff-8bda-29241d49dd85}</Project>
-      <Name>Prism.Autofac.Forms</Name>
-    </ProjectReference>
+    <Reference Include="Testing.Prism.Autofac.Forms">
+      <HintPath>..\..\Dependencies\Testing.Prism.Autofac.Forms\Testing.Prism.Autofac.Forms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\TabbedNavigation\TabbedNavigation.csproj">
       <Project>{7047fb67-9c34-49a2-86aa-e200a5c21a8e}</Project>
       <Name>TabbedNavigation</Name>
