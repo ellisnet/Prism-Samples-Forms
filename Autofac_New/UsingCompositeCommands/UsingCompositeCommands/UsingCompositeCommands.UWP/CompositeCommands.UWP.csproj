@@ -128,14 +128,15 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Prism\Source\Xamarin\Prism.Autofac.Forms\Prism.Autofac.Forms.csproj">
-      <Project>{943664cf-3a0c-4eff-8bda-29241d49dd85}</Project>
-      <Name>Prism.Autofac.Forms</Name>
-    </ProjectReference>
     <ProjectReference Include="..\UsingCompositeCommands\CompositeCommands.csproj">
       <Name>CompositeCommands</Name>
       <Project>{1A10BFD2-241E-479C-BFFD-1B0950C7E960}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Testing.Prism.Autofac.Forms">
+      <HintPath>..\..\..\Dependencies\Testing.Prism.Autofac.Forms\Testing.Prism.Autofac.Forms.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

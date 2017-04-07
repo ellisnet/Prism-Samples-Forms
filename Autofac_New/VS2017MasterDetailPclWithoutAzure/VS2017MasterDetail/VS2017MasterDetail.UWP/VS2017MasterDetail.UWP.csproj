@@ -139,6 +139,11 @@
       <Name>VS2017MasterDetail</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Testing.Prism.Autofac.Forms">
+      <HintPath>..\..\..\Dependencies\Testing.Prism.Autofac.Forms\Testing.Prism.Autofac.Forms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

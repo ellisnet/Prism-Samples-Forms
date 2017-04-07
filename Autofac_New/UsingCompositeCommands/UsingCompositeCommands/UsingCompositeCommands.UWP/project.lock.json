@@ -1908,7 +1908,7 @@
           }
         }
       },
-      "Xamarin.Forms/2.3.3.193": {
+      "Xamarin.Forms/2.3.4.224": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -1927,12 +1927,6 @@
         }
       },
       "CompositeCommands/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "Prism.Autofac.Forms": "1.0.0"
-        }
-      },
-      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
       }
     },
@@ -3709,7 +3703,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.3.193": {
+      "Xamarin.Forms/2.3.4.224": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -3728,12 +3722,6 @@
         }
       },
       "CompositeCommands/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "Prism.Autofac.Forms": "1.0.0"
-        }
-      },
-      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
       }
     },
@@ -5467,7 +5455,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.3.193": {
+      "Xamarin.Forms/2.3.4.224": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -5486,12 +5474,6 @@
         }
       },
       "CompositeCommands/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "Prism.Autofac.Forms": "1.0.0"
-        }
-      },
-      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
       }
     },
@@ -7277,7 +7259,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.3.193": {
+      "Xamarin.Forms/2.3.4.224": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -7296,12 +7278,6 @@
         }
       },
       "CompositeCommands/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "Prism.Autofac.Forms": "1.0.0"
-        }
-      },
-      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
       }
     },
@@ -9035,7 +9011,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.3.193": {
+      "Xamarin.Forms/2.3.4.224": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -9054,12 +9030,6 @@
         }
       },
       "CompositeCommands/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "Prism.Autofac.Forms": "1.0.0"
-        }
-      },
-      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
       }
     },
@@ -10845,7 +10815,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.3.193": {
+      "Xamarin.Forms/2.3.4.224": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -10864,12 +10834,6 @@
         }
       },
       "CompositeCommands/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "Prism.Autofac.Forms": "1.0.0"
-        }
-      },
-      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
       }
     },
@@ -12603,7 +12567,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.3.193": {
+      "Xamarin.Forms/2.3.4.224": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -12622,12 +12586,6 @@
         }
       },
       "CompositeCommands/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "Prism.Autofac.Forms": "1.0.0"
-        }
-      },
-      "Prism.Autofac.Forms/1.0.0": {
         "type": "project"
       }
     }
@@ -16071,16 +16029,11 @@
         "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
     },
-    "Xamarin.Forms/2.3.3.193": {
-      "sha512": "RnZGA4K1MoN5qDKBvBd0BTkWcXQ42p4qCP6VYBoGD/PIlPMyLTUcRnfcPg+jPOjSy7mlNoCMZc+6KL38/wVE5g==",
+    "Xamarin.Forms/2.3.4.224": {
+      "sha512": "cjA3h83bCmnEjEYLcvi2n+rPc3rs3kuB/r5z5R/BFtBLp8kgV8AEImKBcYglsZ80uX3OSIVnPXN9lJ25GMGAmg==",
       "type": "package",
-      "path": "xamarin.forms/2.3.3.193",
+      "path": "xamarin.forms/2.3.4.224",
       "files": [
-        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/ICSharpCode.Decompiler.dll",
-        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/ICSharpCode.NRefactory.CSharp.dll",
-        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/ICSharpCode.NRefactory.Cecil.dll",
-        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/ICSharpCode.NRefactory.Xml.dll",
-        "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/ICSharpCode.NRefactory.dll",
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Mono.Cecil.Mdb.dll",
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Mono.Cecil.Pdb.dll",
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Mono.Cecil.Rocks.dll",
@@ -16168,7 +16121,6 @@
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Core.pdb",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Core.xml",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Platform.dll",
-        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Platform.dll.mdb",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Platform.pdb",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Xaml.dll",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Xaml.dll.mdb",
@@ -16230,7 +16182,7 @@
         "lib/wpa81/Xamarin.Forms.Platform.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.2.3.3.193.nupkg.sha512",
+        "xamarin.forms.2.3.4.224.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -16238,11 +16190,6 @@
       "type": "project",
       "path": "../UsingCompositeCommands/CompositeCommands.csproj",
       "msbuildProject": "../UsingCompositeCommands/CompositeCommands.csproj"
-    },
-    "Prism.Autofac.Forms/1.0.0": {
-      "type": "project",
-      "path": "../../../../Prism/Source/Xamarin/Prism.Autofac.Forms/Prism.Autofac.Forms.csproj",
-      "msbuildProject": "../../../../Prism/Source/Xamarin/Prism.Autofac.Forms/Prism.Autofac.Forms.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -16251,7 +16198,7 @@
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
       "Prism.Core >= 6.3.0",
       "Prism.Forms >= 6.3.0",
-      "Xamarin.Forms >= 2.3.3.193"
+      "Xamarin.Forms >= 2.3.4.224"
     ],
     "UAP,Version=v10.0": []
   },
@@ -16260,19 +16207,16 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\GitHome\\Prism-Samples-Forms\\UsingCompositeCommands.Autofac\\UsingCompositeCommands\\UsingCompositeCommands.UWP\\CompositeCommands.UWP.csproj",
+      "projectUniqueName": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_New\\UsingCompositeCommands\\UsingCompositeCommands\\UsingCompositeCommands.UWP\\CompositeCommands.UWP.csproj",
       "projectName": "CompositeCommands.UWP",
-      "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\UsingCompositeCommands.Autofac\\UsingCompositeCommands\\UsingCompositeCommands.UWP\\CompositeCommands.UWP.csproj",
-      "projectJsonPath": "C:\\GitHome\\Prism-Samples-Forms\\UsingCompositeCommands.Autofac\\UsingCompositeCommands\\UsingCompositeCommands.UWP\\project.json",
+      "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_New\\UsingCompositeCommands\\UsingCompositeCommands\\UsingCompositeCommands.UWP\\CompositeCommands.UWP.csproj",
+      "projectJsonPath": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_New\\UsingCompositeCommands\\UsingCompositeCommands\\UsingCompositeCommands.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "C:\\GitHome\\Prism\\Source\\Xamarin\\Prism.Autofac.Forms\\Prism.Autofac.Forms.csproj": {
-              "projectPath": "C:\\GitHome\\Prism\\Source\\Xamarin\\Prism.Autofac.Forms\\Prism.Autofac.Forms.csproj"
-            },
-            "C:\\GitHome\\Prism-Samples-Forms\\UsingCompositeCommands.Autofac\\UsingCompositeCommands\\UsingCompositeCommands\\CompositeCommands.csproj": {
-              "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\UsingCompositeCommands.Autofac\\UsingCompositeCommands\\UsingCompositeCommands\\CompositeCommands.csproj"
+            "C:\\GitHome\\Prism-Samples-Forms\\Autofac_New\\UsingCompositeCommands\\UsingCompositeCommands\\UsingCompositeCommands\\CompositeCommands.csproj": {
+              "projectPath": "C:\\GitHome\\Prism-Samples-Forms\\Autofac_New\\UsingCompositeCommands\\UsingCompositeCommands\\UsingCompositeCommands\\CompositeCommands.csproj"
             }
           }
         }
@@ -16283,7 +16227,7 @@
       "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
       "Prism.Core": "6.3.0",
       "Prism.Forms": "6.3.0",
-      "Xamarin.Forms": "2.3.3.193"
+      "Xamarin.Forms": "[2.3.4.224, )"
     },
     "frameworks": {
       "uap10.0": {}
