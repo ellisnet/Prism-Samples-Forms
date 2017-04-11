@@ -92,10 +92,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Prism\Source\Xamarin\Prism.Autofac.Forms\Prism.Autofac.Forms.csproj">
-      <Project>{943664cf-3a0c-4eff-8bda-29241d49dd85}</Project>
-      <Name>Prism.Autofac.Forms</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TabbedNavigation\TabbedNavigation.csproj">
       <Project>{7047FB67-9C34-49A2-86AA-E200A5C21A8E}</Project>
       <Name>TabbedNavigation</Name>
