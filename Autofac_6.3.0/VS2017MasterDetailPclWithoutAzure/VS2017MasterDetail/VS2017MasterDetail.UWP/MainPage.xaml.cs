@@ -13,10 +13,6 @@ namespace VS2017MasterDetail.UWP
         {
             this.InitializeComponent();
 
-            //PRISM-CONVERSION-NOTE: This line is temporarily needed for setting Prism to create 
-            //  an immutable Autofac container
-            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
-
             //PRISM-CONVERSION-NOTE: Now initializing our App instance with a new platform-specific
             //  initializer that is declared below.
             LoadApplication(new VS2017MasterDetail.App(new UwpInitializer()));
@@ -29,8 +25,7 @@ namespace VS2017MasterDetail.UWP
         public void RegisterTypes(IContainer container)
         {
             //In the future, if we have any UWP-specific navigation or dependency registrations that need to
-            //  be made during application initialization, we can do that here - e.g.:
-            //container.RegisterType<UwpCustomService>().As<IPlatformCustomService>();
+            //  be made during application initialization, we can do that here
         }
     }
 }

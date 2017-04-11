@@ -1,4 +1,5 @@
-﻿using VS2017MasterDetail.Views;
+﻿using Autofac;
+using VS2017MasterDetail.Views;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -48,7 +49,9 @@ namespace VS2017MasterDetail
             Container.RegisterTypeForNavigation<ItemsPage, ItemsViewModel>();
             Container.RegisterTypeForNavigation<NewItemPage, NewItemViewModel>();
 
-            (Container as IAutofacContainer)?.RegisterType<MockDataStore>().As<IDataStore<Item>>();
+            var builder = new ContainerBuilder();
+            builder.RegisterType<MockDataStore>().As<IDataStore<Item>>();
+            builder.Update(Container);
         }
 
         public static void SetMainPage()

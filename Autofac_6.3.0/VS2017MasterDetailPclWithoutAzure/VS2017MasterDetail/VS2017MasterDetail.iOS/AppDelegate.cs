@@ -16,10 +16,6 @@ namespace VS2017MasterDetail.iOS
 		{
 			global::Xamarin.Forms.Forms.Init();
 
-		    //PRISM-CONVERSION-NOTE: This line is temporarily needed for setting Prism to create 
-		    //  an immutable Autofac container
-		    Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
-
             //PRISM-CONVERSION-NOTE: Now initializing our App instance with a new platform-specific
             //  initializer that is declared below.
             LoadApplication(new App(new iOSInitializer()));
@@ -34,8 +30,7 @@ namespace VS2017MasterDetail.iOS
         public void RegisterTypes(IContainer container)
         {
             //In the future, if we have any iOS-specific navigation or dependency registrations that need to
-            //  be made during application initialization, we can do that here - e.g.:
-            //container.RegisterType<iOSCustomService>().As<IPlatformCustomService>();
+            //  be made during application initialization, we can do that here
         }
     }
 }
