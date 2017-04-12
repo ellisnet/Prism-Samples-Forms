@@ -23,7 +23,7 @@ namespace HamburgerMenu.UWP
         {
             this.InitializeComponent();
 
-            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
+            //TODO: Not sure why this line fails with version 6.3.0 of Prism.Autofac.Forms
             LoadApplication(new HamburgerMenu.App(new UwpInitializer()));
         }
     }

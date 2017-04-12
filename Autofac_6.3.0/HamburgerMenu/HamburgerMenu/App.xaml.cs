@@ -13,7 +13,7 @@ namespace HamburgerMenu
     {
         public App(IPlatformInitializer initializer = null) : base(initializer) { }
 
-        public static new App Current
+        public new static App Current
         {
             get { return Application.Current as App; }
         }
@@ -38,7 +38,9 @@ namespace HamburgerMenu
             Container.RegisterTypeForNavigation<ViewB>();
             Container.RegisterTypeForNavigation<ViewC>();
 
-            (Container as IAutofacContainer)?.RegisterType<AuthenticationService>().As<IAuthenticationService>().SingleInstance();
+            var builder = new ContainerBuilder();
+            builder.RegisterType<AuthenticationService>().As<IAuthenticationService>().SingleInstance();
+            builder.Update(Container);
         }
 
         protected override void OnStart()

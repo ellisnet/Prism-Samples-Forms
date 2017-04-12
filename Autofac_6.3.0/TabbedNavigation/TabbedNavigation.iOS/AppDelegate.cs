@@ -25,7 +25,6 @@ namespace TabbedNavigation.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
             LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options);

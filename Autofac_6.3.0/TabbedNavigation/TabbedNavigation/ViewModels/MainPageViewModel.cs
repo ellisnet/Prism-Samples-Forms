@@ -85,6 +85,8 @@ namespace TabbedNavigation.ViewModels
             if(children.Count > 0)
                 path += "?" + string.Join("&", children);
 
+            //This line does not appear to work with Prism.Autofac.Forms version 6.3.0
+            // - but should be fixed in a future version.
             _navigationService.NavigateAsync(path);
         }
     }

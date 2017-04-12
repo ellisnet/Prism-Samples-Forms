@@ -23,7 +23,6 @@ namespace TabbedNavigation.UWP
         {
             this.InitializeComponent();
 
-            Prism.Autofac.PrismApplication.ContainerType = AutofacContainerType.Immutable;
             LoadApplication(new TabbedNavigation.App(new UwpInitializer()));
         }
     }
