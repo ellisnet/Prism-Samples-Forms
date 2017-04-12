@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingModules", "UsingModules\UsingModules\UsingModules.csproj", "{ABCCB3A1-4D65-4C38-9038-B89F31940EA4}"
 EndProject
@@ -134,8 +134,6 @@ Global
 		{62EE0041-9C6F-421E-A419-ADE5CA4968AE}.Debug|ARM.Build.0 = Debug|Any CPU
 		{62EE0041-9C6F-421E-A419-ADE5CA4968AE}.Debug|ARM.Deploy.0 = Debug|Any CPU
 		{62EE0041-9C6F-421E-A419-ADE5CA4968AE}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{62EE0041-9C6F-421E-A419-ADE5CA4968AE}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{62EE0041-9C6F-421E-A419-ADE5CA4968AE}.Debug|iPhone.Deploy.0 = Debug|Any CPU
 		{62EE0041-9C6F-421E-A419-ADE5CA4968AE}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
 		{62EE0041-9C6F-421E-A419-ADE5CA4968AE}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{62EE0041-9C6F-421E-A419-ADE5CA4968AE}.Debug|iPhoneSimulator.Deploy.0 = Debug|Any CPU
