@@ -3,7 +3,7 @@ using Prism.Navigation;
 
 namespace UsingModules.SampleModule.ViewModels
 {
-    public class SamplePageViewModel : BindableBase, INavigationAware
+    public class SamplePageViewModel : BindableBase, INavigationAware, IDestructible
     {
         private string _title;
         public string Title
@@ -31,6 +31,12 @@ namespace UsingModules.SampleModule.ViewModels
         {
             //Called before the implementor has been navigated to - but not called when using 
             // device hardware or software back buttons.
+        }
+
+        public void Destroy()
+        {
+            //Called when user navigates back to parent, and SamplePage is removed from the nav 
+            // stack - IDisposable.Dispose()-type logic should be put here.
         }
     }
 }
