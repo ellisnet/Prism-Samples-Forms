@@ -2431,7 +2431,7 @@
           }
         }
       },
-      "Xamarin.Forms/2.3.4.224": {
+      "Xamarin.Forms/2.3.4.231": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -2458,7 +2458,7 @@
           "NETStandard.Library": "1.6.1",
           "Prism.Core": "6.3.0",
           "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.4.224"
+          "Xamarin.Forms": "2.3.4.231"
         }
       }
     },
@@ -4922,7 +4922,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.224": {
+      "Xamarin.Forms/2.3.4.231": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -4949,7 +4949,7 @@
           "NETStandard.Library": "1.6.1",
           "Prism.Core": "6.3.0",
           "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.4.224"
+          "Xamarin.Forms": "2.3.4.231"
         }
       }
     },
@@ -7452,7 +7452,7 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.224": {
+      "Xamarin.Forms/2.3.4.231": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -7479,7 +7479,7 @@
           "NETStandard.Library": "1.6.1",
           "Prism.Core": "6.3.0",
           "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.4.224"
+          "Xamarin.Forms": "2.3.4.231"
         }
       }
     },
@@ -9952,7 +9952,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.224": {
+      "Xamarin.Forms/2.3.4.231": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -9979,7 +9979,7 @@
           "NETStandard.Library": "1.6.1",
           "Prism.Core": "6.3.0",
           "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.4.224"
+          "Xamarin.Forms": "2.3.4.231"
         }
       }
     },
@@ -12491,7 +12491,7 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.224": {
+      "Xamarin.Forms/2.3.4.231": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -12518,7 +12518,7 @@
           "NETStandard.Library": "1.6.1",
           "Prism.Core": "6.3.0",
           "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.4.224"
+          "Xamarin.Forms": "2.3.4.231"
         }
       }
     },
@@ -14991,7 +14991,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.224": {
+      "Xamarin.Forms/2.3.4.231": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -15018,7 +15018,7 @@
           "NETStandard.Library": "1.6.1",
           "Prism.Core": "6.3.0",
           "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.4.224"
+          "Xamarin.Forms": "2.3.4.231"
         }
       }
     },
@@ -17530,7 +17530,7 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.224": {
+      "Xamarin.Forms/2.3.4.231": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -17557,7 +17557,7 @@
           "NETStandard.Library": "1.6.1",
           "Prism.Core": "6.3.0",
           "Prism.Forms": "6.3.0",
-          "Xamarin.Forms": "2.3.4.224"
+          "Xamarin.Forms": "2.3.4.231"
         }
       }
     }
@@ -18529,14 +18529,14 @@
       ]
     },
     "Microsoft.Net.Native.SharedLibrary-arm/1.6.0": {
-      "sha512": "ChcAhKNCiys3rLMuB+bPgEzE/9F8PRR8zDbgbY0TCN779DXI7VGcTYoJRLHI2ilaYbrQN4CPYQbaAk7B9DNQPQ==",
+      "sha512": "6tms4tVQoedKirFMs8q6qCLESDW3uAmFLWwUOB4lKDGtN+MHktTvA+VomsOWYtI//ByH1VSCIBvHVIqiNY8HXQ==",
       "type": "package",
       "path": "microsoft.net.native.sharedlibrary-arm/1.6.0",
       "files": [
+        "Microsoft.Net.Native.SharedLibrary-arm.1.6.0.nupkg.sha512",
+        "Microsoft.Net.Native.SharedLibrary-arm.nuspec",
         "build/Microsoft.Net.Native.SharedLibrary-arm.props",
         "build/Microsoft.Net.Native.SharedLibrary-arm.targets",
-        "microsoft.net.native.sharedlibrary-arm.1.6.0.nupkg.sha512",
-        "microsoft.net.native.sharedlibrary-arm.nuspec",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.Concurrent.iltoc",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.Concurrent.iltocpdb",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.iltoc",
@@ -18929,14 +18929,14 @@
       ]
     },
     "Microsoft.Net.Native.SharedLibrary-x64/1.6.0": {
-      "sha512": "iGRwIqFwc2zH1iRjjWKzVHcu9Ri2A/5F9Zozu/BwtVaBYv2bc+mPHzfEg2dTeE5IrZ9jDqPOUCPXChHxirQ2bg==",
+      "sha512": "pLNmswGR+pzjLOgq+0oABz3e2C5XjSmTo81MFPSN9CeKyYiMb2eybU1fJRjyk86XFMfENK26gGUSVMhAo4zH/g==",
       "type": "package",
       "path": "microsoft.net.native.sharedlibrary-x64/1.6.0",
       "files": [
+        "Microsoft.Net.Native.SharedLibrary-x64.1.6.0.nupkg.sha512",
+        "Microsoft.Net.Native.SharedLibrary-x64.nuspec",
         "build/Microsoft.Net.Native.SharedLibrary-x64.props",
         "build/Microsoft.Net.Native.SharedLibrary-x64.targets",
-        "microsoft.net.native.sharedlibrary-x64.1.6.0.nupkg.sha512",
-        "microsoft.net.native.sharedlibrary-x64.nuspec",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.Concurrent.iltoc",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.Concurrent.iltocpdb",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.iltoc",
@@ -19329,14 +19329,14 @@
       ]
     },
     "Microsoft.Net.Native.SharedLibrary-x86/1.6.0": {
-      "sha512": "peP8zi7V5K7I8bSH3m1aIW4syZahCenajymxymU4eCIDhPFPz7ZwQB8IoFb5M2Y1DTJPKGbXuPd2MV3x4eFMeg==",
+      "sha512": "AC1O3na4oqgWdvjoMjVPvt2vCO9VESTkArknbTlep5NWVRdMU2nay4XHYWBleOhweE2kw52kJHv1BGN0dcXjhQ==",
       "type": "package",
       "path": "microsoft.net.native.sharedlibrary-x86/1.6.0",
       "files": [
+        "Microsoft.Net.Native.SharedLibrary-x86.1.6.0.nupkg.sha512",
+        "Microsoft.Net.Native.SharedLibrary-x86.nuspec",
         "build/Microsoft.Net.Native.SharedLibrary-x86.props",
         "build/Microsoft.Net.Native.SharedLibrary-x86.targets",
-        "microsoft.net.native.sharedlibrary-x86.1.6.0.nupkg.sha512",
-        "microsoft.net.native.sharedlibrary-x86.nuspec",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.Concurrent.iltoc",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.Concurrent.iltocpdb",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.iltoc",
@@ -26202,10 +26202,10 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "Xamarin.Forms/2.3.4.224": {
-      "sha512": "cjA3h83bCmnEjEYLcvi2n+rPc3rs3kuB/r5z5R/BFtBLp8kgV8AEImKBcYglsZ80uX3OSIVnPXN9lJ25GMGAmg==",
+    "Xamarin.Forms/2.3.4.231": {
+      "sha512": "Tar4nHke8Rl0Mz2Y1MdNAMvo8wKc/wVVW2rN7loXMc+2R1ex3n/fzs7eD2F7gDw3TceGLQku52kyc5LuN8Hlgw==",
       "type": "package",
-      "path": "xamarin.forms/2.3.4.224",
+      "path": "xamarin.forms/2.3.4.231",
       "files": [
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Mono.Cecil.Mdb.dll",
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Mono.Cecil.Pdb.dll",
@@ -26294,6 +26294,7 @@
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Core.pdb",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Core.xml",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Platform.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Platform.dll.mdb",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Platform.pdb",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Xaml.dll",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Xaml.dll.mdb",
@@ -26355,7 +26356,7 @@
         "lib/wpa81/Xamarin.Forms.Platform.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.2.3.4.224.nupkg.sha512",
+        "xamarin.forms.2.3.4.231.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -26371,12 +26372,12 @@
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.3.2",
       "Prism.Core >= 6.3.0",
       "Prism.Forms >= 6.3.0",
-      "Xamarin.Forms >= 2.3.4.224"
+      "Xamarin.Forms >= 2.3.4.231"
     ],
     "UAP,Version=v10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jeremy\\.nuget\\packages\\": {}
+    "C:\\Users\\jerem\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
@@ -26397,10 +26398,10 @@
     },
     "dependencies": {
       "Autofac": "4.5.0",
-      "Microsoft.NETCore.UniversalWindowsPlatform": "[5.3.2, )",
+      "Microsoft.NETCore.UniversalWindowsPlatform": "5.3.2",
       "Prism.Core": "6.3.0",
       "Prism.Forms": "6.3.0",
-      "Xamarin.Forms": "2.3.4.224"
+      "Xamarin.Forms": "2.3.4.231"
     },
     "frameworks": {
       "uap10.0": {}
